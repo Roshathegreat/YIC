@@ -1,0 +1,158 @@
+{
+  "id": "japan",
+  "displayName": "Japan",
+  "iso3": "JPN",
+  "m49": 392,
+  "accentColor": "#dc2626",
+  "marineAnimal": {
+    "species": "Spotted seal (Phoca largha)",
+    "spriteId": "seal-jpn",
+    "emoji": "🦭",
+    "lobsterRelationship": "Ise's neighbor in northern Japanese waters; trusted older friend who has watched Hokkaido coastlines change over decades."
+  },
+  "treatyPosition": {
+    "currentStance": "Japan supports a legally binding global plastics treaty but has favored a focus on waste management and downstream measures over upstream production caps. It coordinates closely with other consumer-economy negotiating partners.",
+    "inc52Position": "At the resumed INC-5.2 in Geneva (August 2025), Japan continued to support a treaty but did not align with the High Ambition Coalition's call for a binding cap on primary plastic polymer production. The session ended without a final agreed text.",
+    "historicalRounds": [
+      {
+        "roundId": "INC-5.2",
+        "date": "2025-08-14",
+        "position": "Engaged constructively; emphasized full lifecycle approach with strong waste-management language; did not endorse a binding production cap.",
+        "sources": [
+          {
+            "url": "https://www.unep.org/inc-plastic-pollution",
+            "publisher": "UN Environment Programme",
+            "accessedDate": "2026-05-02",
+            "verified": false,
+            "note": "User: confirm Japan's exact INC-5.2 statement before publishing."
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.env.go.jp/en/",
+        "publisher": "Ministry of the Environment, Japan",
+        "accessedDate": "2026-05-02",
+        "verified": false,
+        "note": "User: replace with direct link to Japan's INC position paper."
+      }
+    ],
+    "lastUpdated": "2026-05-03"
+  },
+  "domesticPolicies": [
+    {
+      "id": "jpn-plastic-resource-circulation-act",
+      "name": "Plastic Resource Circulation Act (プラスチック資源循環促進法)",
+      "enacted": "2022-04-01",
+      "summary": "Promotes design-for-recycling, expanded sorted collection of plastic waste by municipalities, and obligations on businesses to reduce single-use plastic. Sets a framework for the 3Rs+Renewable across the plastics lifecycle.",
+      "scope": "national",
+      "sources": [
+        {
+          "url": "https://www.env.go.jp/en/recycle/plastic_circulation.html",
+          "publisher": "Ministry of the Environment, Japan",
+          "accessedDate": "2026-05-02",
+          "verified": false,
+          "note": "User: confirm URL is live; use archive.org backup if redirected."
+        }
+      ],
+      "lastUpdated": "2026-05-03"
+    },
+    {
+      "id": "jpn-bag-charge-2020",
+      "name": "Mandatory plastic shopping bag charge",
+      "enacted": "2020-07-01",
+      "summary": "Retailers nationwide must charge for plastic shopping bags. Reported to have reduced single-use bag consumption sharply in the first year.",
+      "scope": "national",
+      "sources": [
+        {
+          "url": "https://www.meti.go.jp/english/policy/recycle/plasticbag.html",
+          "publisher": "Ministry of Economy, Trade and Industry",
+          "accessedDate": "2026-05-02",
+          "verified": false
+        }
+      ],
+      "lastUpdated": "2026-05-03"
+    }
+  ],
+  "companies": [
+    {
+      "id": "jpn-suntory",
+      "name": "Suntory Holdings",
+      "sector": "Beverages",
+      "commitments": [
+        {
+          "description": "Switch all PET bottles globally to recycled or plant-based materials.",
+          "target": "100%",
+          "year": 2030,
+          "sources": [
+            {
+              "url": "https://www.suntory.com/csr/activity/environment/eco/plastic/",
+              "publisher": "Suntory Holdings",
+              "accessedDate": "2026-05-02",
+              "verified": false
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.suntory.com/csr/",
+          "publisher": "Suntory Holdings",
+          "accessedDate": "2026-05-02",
+          "verified": false
+        }
+      ],
+      "lastUpdated": "2026-05-03"
+    },
+    {
+      "id": "jpn-sevenandi",
+      "name": "Seven & i Holdings",
+      "sector": "Convenience retail",
+      "commitments": [
+        {
+          "description": "Reduce plastic packaging in original products and shift to bio-based, recycled, or paper materials.",
+          "year": 2030,
+          "sources": [
+            {
+              "url": "https://www.7andi.com/en/sustainability/theme/theme2/plastic.html",
+              "publisher": "Seven & i Holdings",
+              "accessedDate": "2026-05-02",
+              "verified": false
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.7andi.com/en/sustainability/",
+          "publisher": "Seven & i Holdings",
+          "accessedDate": "2026-05-02",
+          "verified": false
+        }
+      ],
+      "lastUpdated": "2026-05-03"
+    }
+  ],
+  "newsFeed": [],
+  "deepNode": {
+    "marineDebrisData": "Beppu Bay receives marine debris from rivers draining the Oita prefecture watershed and from drift currents along the Inland Sea. Local beach surveys consistently find single-use plastic packaging, fishing gear fragments, and microplastics. Quantitative figures pending — user to fill from local source.",
+    "cleanupOrgs": [
+      {
+        "name": "Beppu beach cleanup volunteers (placeholder)",
+        "description": "User: replace with real local org and contact details. Common candidates include local fishing cooperatives and the Oita prefectural environmental division."
+      }
+    ],
+    "hydrology": "Beppu sits at the foot of mountains that drain quickly to the Inland Sea via short, steep rivers. Heavy rainfall events flush land-based litter to the coast in a matter of hours, making Beppu a tight source-to-sea case study. User: add specific river names and gauge data.",
+    "sources": [
+      {
+        "url": "https://www.pref.oita.jp/site/english/",
+        "publisher": "Oita Prefectural Government",
+        "accessedDate": "2026-05-02",
+        "verified": false,
+        "note": "Placeholder source. Replace with cited Beppu-specific marine debris study."
+      }
+    ],
+    "lastUpdated": "2026-05-03"
+  }
+}

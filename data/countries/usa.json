@@ -1,0 +1,139 @@
+{
+  "id": "usa",
+  "displayName": "United States",
+  "iso3": "USA",
+  "m49": 840,
+  "accentColor": "#2563eb",
+  "marineAnimal": {
+    "species": "Sea otter (Enhydra lutris)",
+    "spriteId": "otter-usa",
+    "emoji": "🦦",
+    "lobsterRelationship": "A Pacific cousin who Ise meets at the kelp-forest edge — clever with tools, opinionated, sometimes evasive about whose mess is whose."
+  },
+  "treatyPosition": {
+    "currentStance": "The United States supports a global plastics agreement but has historically opposed binding caps on primary plastic polymer production, favoring national flexibility and a focus on waste management, product design, and recycling infrastructure.",
+    "inc52Position": "At INC-5.2 in Geneva (August 2025), the United States did not join the High Ambition Coalition's call for a binding cap on virgin plastic production. The session adjourned without a final treaty text. User: confirm exact US delegation statement before publishing.",
+    "historicalRounds": [
+      {
+        "roundId": "INC-5.2",
+        "date": "2025-08-14",
+        "position": "Engaged in negotiations; declined to support a binding production cap; emphasized national circumstances and downstream measures.",
+        "sources": [
+          {
+            "url": "https://www.unep.org/inc-plastic-pollution",
+            "publisher": "UN Environment Programme",
+            "accessedDate": "2026-05-02",
+            "verified": false,
+            "note": "User: confirm with State Department readout."
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.state.gov/",
+        "publisher": "U.S. Department of State",
+        "accessedDate": "2026-05-02",
+        "verified": false,
+        "note": "Replace with direct link to US INC negotiating position."
+      }
+    ],
+    "lastUpdated": "2026-05-03"
+  },
+  "domesticPolicies": [
+    {
+      "id": "usa-save-our-seas-2.0",
+      "name": "Save Our Seas 2.0 Act",
+      "enacted": "2020-12-18",
+      "summary": "Federal law strengthening US marine debris response, expanding the Marine Debris Foundation, and authorizing investment in domestic recycling infrastructure and international partnerships to address plastic pollution.",
+      "scope": "national",
+      "sources": [
+        {
+          "url": "https://www.congress.gov/bill/116th-congress/senate-bill/1982",
+          "publisher": "U.S. Congress",
+          "accessedDate": "2026-05-02",
+          "verified": false
+        }
+      ],
+      "lastUpdated": "2026-05-03"
+    },
+    {
+      "id": "usa-ca-sb54",
+      "name": "California SB 54 — Plastic Pollution Prevention and Packaging Producer Responsibility Act",
+      "enacted": "2022-06-30",
+      "summary": "Landmark state-level EPR law requiring producers of single-use packaging and plastic foodware to ensure all such material sold in California is recyclable or compostable by 2032, with phased reductions in single-use plastic packaging and a producer-funded mitigation fund.",
+      "scope": "subnational",
+      "sources": [
+        {
+          "url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202120220SB54",
+          "publisher": "California Legislative Information",
+          "accessedDate": "2026-05-02",
+          "verified": false
+        }
+      ],
+      "lastUpdated": "2026-05-03"
+    }
+  ],
+  "companies": [
+    {
+      "id": "usa-coca-cola",
+      "name": "The Coca-Cola Company",
+      "sector": "Beverages",
+      "commitments": [
+        {
+          "description": "Use at least 25% recycled material in primary consumer packaging across the portfolio (revised target).",
+          "target": "25%",
+          "year": 2035,
+          "sources": [
+            {
+              "url": "https://www.coca-colacompany.com/sustainability/packaging-sustainability",
+              "publisher": "The Coca-Cola Company",
+              "accessedDate": "2026-05-02",
+              "verified": false,
+              "note": "User: confirm current target wording — Coca-Cola revised this several times."
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.coca-colacompany.com/sustainability",
+          "publisher": "The Coca-Cola Company",
+          "accessedDate": "2026-05-02",
+          "verified": false
+        }
+      ],
+      "lastUpdated": "2026-05-03"
+    },
+    {
+      "id": "usa-pepsico",
+      "name": "PepsiCo",
+      "sector": "Food & beverages",
+      "commitments": [
+        {
+          "description": "Reduce virgin plastic per serving across global beverage portfolio.",
+          "target": "50% reduction",
+          "year": 2030,
+          "sources": [
+            {
+              "url": "https://www.pepsico.com/our-impact/esg-topics-a-z/packaging",
+              "publisher": "PepsiCo",
+              "accessedDate": "2026-05-02",
+              "verified": false
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.pepsico.com/our-impact",
+          "publisher": "PepsiCo",
+          "accessedDate": "2026-05-02",
+          "verified": false
+        }
+      ],
+      "lastUpdated": "2026-05-03"
+    }
+  ],
+  "newsFeed": []
+}

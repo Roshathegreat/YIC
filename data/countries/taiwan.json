@@ -1,0 +1,136 @@
+{
+  "id": "taiwan",
+  "displayName": "Taiwan",
+  "iso3": "TWN",
+  "m49": 158,
+  "accentColor": "#16a34a",
+  "marineAnimal": {
+    "species": "Indo-Pacific humpback dolphin (Sousa chinensis), \"Taiwanese white dolphin\"",
+    "spriteId": "dolphin-twn",
+    "emoji": "🐬",
+    "lobsterRelationship": "An endangered cousin off Taiwan's west coast — fewer than 100 left in the wild. Ise visits and listens carefully; the dolphin's voice carries weight beyond its small numbers."
+  },
+  "treatyPosition": {
+    "currentStance": "Taiwan is not a UN member and does not have a formal seat at INC negotiations, but it has publicly committed to aligning its domestic plastics policy with the direction of the global treaty. The Ministry of Environment tracks INC outcomes and engages through scientific and civil-society channels.",
+    "inc52Position": "Taiwan was not a formal party at INC-5.2 (Geneva, August 2025) but its environmental ministry has stated it intends to follow the treaty's eventual obligations. User: confirm the most recent official Taiwanese government statement on the INC process before publishing.",
+    "historicalRounds": [
+      {
+        "roundId": "INC-5.2",
+        "date": "2025-08-14",
+        "position": "Not a formal party. Engaged through observer and scientific channels.",
+        "sources": [
+          {
+            "url": "https://www.moenv.gov.tw/en/",
+            "publisher": "Ministry of Environment, Taiwan",
+            "accessedDate": "2026-05-02",
+            "verified": false
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.moenv.gov.tw/en/",
+        "publisher": "Ministry of Environment, Taiwan",
+        "accessedDate": "2026-05-02",
+        "verified": false,
+        "note": "Replace with direct policy statement once located."
+      }
+    ],
+    "lastUpdated": "2026-05-03"
+  },
+  "domesticPolicies": [
+    {
+      "id": "twn-single-use-plastics-roadmap",
+      "name": "Single-use plastics phase-out roadmap",
+      "enacted": "2018-02-01",
+      "summary": "Multi-year roadmap restricting four categories of single-use plastics — bags, straws, utensils, and beverage cups — across government agencies, schools, restaurants, and retail, with progressive expansion to a full ban target.",
+      "scope": "national",
+      "sources": [
+        {
+          "url": "https://www.moenv.gov.tw/en/",
+          "publisher": "Ministry of Environment, Taiwan",
+          "accessedDate": "2026-05-02",
+          "verified": false,
+          "note": "User: link to the specific announcement page; confirm exact phase-out years."
+        }
+      ],
+      "lastUpdated": "2026-05-03"
+    },
+    {
+      "id": "twn-plastic-bag-restriction",
+      "name": "Plastic shopping bag restriction (expanded 2018)",
+      "enacted": "2018-01-01",
+      "summary": "Expansion of the original 2002 plastic bag restriction to cover seven additional categories of retail (bookstores, beverage shops, bakeries, laundries, pharmacies, hardware stores, and 3C electronics stores), requiring paid bags rather than free distribution.",
+      "scope": "national",
+      "sources": [
+        {
+          "url": "https://www.moenv.gov.tw/en/",
+          "publisher": "Ministry of Environment, Taiwan",
+          "accessedDate": "2026-05-02",
+          "verified": false
+        }
+      ],
+      "lastUpdated": "2026-05-03"
+    }
+  ],
+  "companies": [
+    {
+      "id": "twn-uni-president",
+      "name": "Uni-President Enterprises",
+      "sector": "Food & beverages",
+      "commitments": [
+        {
+          "description": "Increase use of recycled PET in beverage packaging and reduce plastic packaging weight per unit.",
+          "sources": [
+            {
+              "url": "https://www.uni-president.com.tw/en/",
+              "publisher": "Uni-President Enterprises",
+              "accessedDate": "2026-05-02",
+              "verified": false,
+              "note": "User: locate Uni-President's CSR/sustainability report and link to specific commitment."
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.uni-president.com.tw/en/",
+          "publisher": "Uni-President Enterprises",
+          "accessedDate": "2026-05-02",
+          "verified": false
+        }
+      ],
+      "lastUpdated": "2026-05-03"
+    },
+    {
+      "id": "twn-formosa-plastics",
+      "name": "Formosa Plastics Group",
+      "sector": "Petrochemicals / plastic resin production",
+      "commitments": [
+        {
+          "description": "Public sustainability disclosures on emissions and circular-economy investments. Formosa is a major upstream resin producer; commitments to reduce primary polymer output have been limited and contested by environmental groups.",
+          "sources": [
+            {
+              "url": "https://www.fpg.com.tw/en",
+              "publisher": "Formosa Plastics Group",
+              "accessedDate": "2026-05-02",
+              "verified": false,
+              "note": "User: this entry is intentionally critical-flavored; verify wording and add NGO counter-source for balance."
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.fpg.com.tw/en",
+          "publisher": "Formosa Plastics Group",
+          "accessedDate": "2026-05-02",
+          "verified": false
+        }
+      ],
+      "lastUpdated": "2026-05-03"
+    }
+  ],
+  "newsFeed": []
+}
