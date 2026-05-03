@@ -6,6 +6,7 @@ interface RecordCardProps {
   badge?: string;
   children: ReactNode;
   lastUpdated?: string;
+  anchorId?: string;
 }
 
 export function RecordCard({
@@ -14,9 +15,13 @@ export function RecordCard({
   badge,
   children,
   lastUpdated,
+  anchorId,
 }: RecordCardProps) {
   return (
-    <article className="border border-gray-200 rounded-md p-4 bg-white">
+    <article
+      id={anchorId}
+      className="border border-gray-200 rounded-md p-4 bg-white scroll-mt-20 target:ring-2 target:ring-amber-400"
+    >
       <header className="flex items-start justify-between gap-3">
         <div>
           <h3 className="text-base font-semibold text-gray-900">{title}</h3>

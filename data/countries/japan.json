@@ -135,6 +135,43 @@
     }
   ],
   "newsFeed": [],
+  "lobsterTranslations": [
+    {
+      "sourceRecordType": "treaty",
+      "sourceRecordId": "current",
+      "body": "Okay, here's the honest version. Japan turns up at the treaty table. Japan signs the visitor's book. But when the room asks 'should we cap how much new plastic the world is allowed to make?' — Japan looks at its shoes. It would rather we get really good at cleaning up afterwards. The High Ambition Coalition wants a hard limit on virgin plastic. Japan, in Geneva last August, did not stand with them. The session ended with no final text. I'm not pretending Japan is the villain. I'm saying: clean-up is downstream of me, in Beppu Bay. By the time it's my problem, it's already too late.",
+      "generatedAt": "2026-05-03",
+      "modelVersion": "human-draft-v1"
+    },
+    {
+      "sourceRecordType": "policy",
+      "sourceRecordId": "jpn-plastic-resource-circulation-act",
+      "body": "Since April 2022, Japan has had a law called the Plastic Resource Circulation Act. It is the law that tells your convenience store to ask if you really need that little plastic spoon. It tells towns to sort plastic from other trash, and tells companies to design products that can actually be recycled instead of just looking recyclable. It is genuinely a step. It is not a cap on how much plastic Japan makes in the first place — that distinction matters when you live downstream of a river.",
+      "generatedAt": "2026-05-03",
+      "modelVersion": "human-draft-v1"
+    },
+    {
+      "sourceRecordType": "policy",
+      "sourceRecordId": "jpn-bag-charge-2020",
+      "body": "From July 2020 every shop in Japan started charging for plastic bags. Just a few yen, but enough that people started bringing their own. Plastic bag use dropped fast in the first year. A small habit, scaled across a hundred million people, is not nothing. It is also, by itself, not enough. Bags are a slice of the problem; the bigger slice is upstream of any cashier.",
+      "generatedAt": "2026-05-03",
+      "modelVersion": "human-draft-v1"
+    },
+    {
+      "sourceRecordType": "company",
+      "sourceRecordId": "jpn-suntory",
+      "body": "Suntory makes a lot of bottles. They have promised that by 2030, every PET bottle they sell anywhere in the world will be recycled or plant-based — no new fossil plastic. That's a real promise on paper. The test is whether the bottle in your hand five years from now actually says so. Pledges age. I'll be checking.",
+      "generatedAt": "2026-05-03",
+      "modelVersion": "human-draft-v1"
+    },
+    {
+      "sourceRecordType": "beppu",
+      "sourceRecordId": "beppu",
+      "body": "This is home, so I'll go slowly. Beppu sits at the bottom of mountains. The rivers here are short and steep, which means rain doesn't take its time — it sprints to the sea, and it brings whatever was lying around with it. After a heavy storm I find packaging fragments and bits of fishing gear washed up within hours. Cleanup volunteers come out and pick the beach clean, and the next storm refills it. This is what 'source-to-sea' means in one bay: the source isn't far away. It is the street, the slope, the river, and then me. The specific numbers and the names of the local groups doing the work — those go in the source records on the Ledger, and we are still filling those in carefully.",
+      "generatedAt": "2026-05-03",
+      "modelVersion": "human-draft-v1"
+    }
+  ],
   "deepNode": {
     "marineDebrisData": "Beppu Bay receives marine debris from rivers draining the Oita prefecture watershed and from drift currents along the Inland Sea. Local beach surveys consistently find single-use plastic packaging, fishing gear fragments, and microplastics. Quantitative figures pending — user to fill from local source.",
     "cleanupOrgs": [
