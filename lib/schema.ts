@@ -83,22 +83,65 @@ export const TreatyPositionSchema = z.object({
   lastUpdated: ISODate,
 });
 
-export const CountrySchema = z.object({
-  id: z.enum(["japan", "usa", "taiwan"]),
-  displayName: z.string(),
-  iso3: z.string().length(3),
-  m49: z.number().int(),
-  accentColor: z.string().regex(/^#[0-9a-fA-F]{6}$/),
-  marineAnimal: MarineAnimalSchema,
-  treatyPosition: TreatyPositionSchema,
-  domesticPolicies: z.array(PolicySchema),
-  companies: z.array(CompanySchema),
-  newsFeed: z.array(NewsItemSchema),
-  deepNode: BeppuNodeSchema.optional(),
+export const LOBSTER_RECORD_TYPES = [
+  "treaty",
+  "policy",
+  "company",
+  "news",
+  "beppu",
+] as const;
+
+export const LobsterTranslationSchema = z.object({
+  sourceRecordType: z.enum(LOBSTER_RECORD_TYPES),
+  sourceRecordId: z.string().min(1),
+  body: z.string().min(1),
+  generatedAt: ISODate,
+  modelVersion: z.string().min(1),
 });
+
+export const CountrySchema = z
+  .object({
+    id: z.enum(["japan", "usa", "taiwan"]),
+    displayName: z.string(),
+    iso3: z.string().length(3),
+    m49: z.number().int(),
+    accentColor: z.string().regex(/^#[0-9a-fA-F]{6}$/),
+    marineAnimal: MarineAnimalSchema,
+    treatyPosition: TreatyPositionSchema,
+    domesticPolicies: z.array(PolicySchema),
+    companies: z.array(CompanySchema),
+    newsFeed: z.array(NewsItemSchema),
+    deepNode: BeppuNodeSchema.optional(),
+    lobsterTranslations: z.array(LobsterTranslationSchema).default([]),
+  })
+  .superRefine((country, ctx) => {
+    const policyIds = new Set(country.domesticPolicies.map((p) => p.id));
+    const companyIds = new Set(country.companies.map((c) => c.id));
+    const newsIds = new Set(country.newsFeed.map((n) => n.id));
+    for (const [i, t] of country.lobsterTranslations.entries()) {
+      const ok =
+        (t.sourceRecordType === "treaty" && t.sourceRecordId === "current") ||
+        (t.sourceRecordType === "policy" && policyIds.has(t.sourceRecordId)) ||
+        (t.sourceRecordType === "company" &&
+          companyIds.has(t.sourceRecordId)) ||
+        (t.sourceRecordType === "news" && newsIds.has(t.sourceRecordId)) ||
+        (t.sourceRecordType === "beppu" &&
+          t.sourceRecordId === "beppu" &&
+          country.deepNode !== undefined);
+      if (!ok) {
+        ctx.addIssue({
+          code: z.ZodIssueCode.custom,
+          path: ["lobsterTranslations", i],
+          message: `lobster translation references unknown ${t.sourceRecordType} record "${t.sourceRecordId}"`,
+        });
+      }
+    }
+  });
 
 export type Country = z.infer<typeof CountrySchema>;
 export type Source = z.infer<typeof SourceSchema>;
 export type Policy = z.infer<typeof PolicySchema>;
 export type Company = z.infer<typeof CompanySchema>;
 export type NewsItem = z.infer<typeof NewsItemSchema>;
+export type LobsterTranslation = z.infer<typeof LobsterTranslationSchema>;
+export type LobsterRecordType = (typeof LOBSTER_RECORD_TYPES)[number];

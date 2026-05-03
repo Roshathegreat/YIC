@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { COUNTRY_IDS, getCountry, type CountryId } from "@/lib/db";
 import { RecordCard } from "@/components/ledger/RecordCard";
 import { SourceList } from "@/components/ledger/SourceCite";
+import { ledgerAnchor } from "@/lib/lobster";
 
 export function generateStaticParams() {
   return COUNTRY_IDS.map((id) => ({ id }));
@@ -44,6 +45,7 @@ export default async function CountryPage({
         </h2>
         <RecordCard
           title="Current stance"
+          anchorId={ledgerAnchor("treaty", "current")}
           lastUpdated={country.treatyPosition.lastUpdated}
         >
           <p>{country.treatyPosition.currentStance}</p>
@@ -69,6 +71,7 @@ export default async function CountryPage({
             <RecordCard
               key={p.id}
               title={p.name}
+              anchorId={ledgerAnchor("policy", p.id)}
               subtitle={p.enacted ? `Enacted ${p.enacted}` : undefined}
               badge={p.scope}
               lastUpdated={p.lastUpdated}
@@ -94,6 +97,7 @@ export default async function CountryPage({
             <RecordCard
               key={c.id}
               title={c.name}
+              anchorId={ledgerAnchor("company", c.id)}
               subtitle={c.sector}
               lastUpdated={c.lastUpdated}
             >
@@ -146,6 +150,7 @@ export default async function CountryPage({
           </h2>
           <RecordCard
             title="Local context"
+            anchorId={ledgerAnchor("beppu", "beppu")}
             lastUpdated={country.deepNode.lastUpdated}
           >
             <p>

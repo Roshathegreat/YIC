@@ -135,5 +135,35 @@
       "lastUpdated": "2026-05-03"
     }
   ],
-  "newsFeed": []
+  "newsFeed": [],
+  "lobsterTranslations": [
+    {
+      "sourceRecordType": "treaty",
+      "sourceRecordId": "current",
+      "body": "The United States is a big country with a lot of opinions. At the plastic treaty in Geneva last August, when the question was 'should we cap virgin plastic production?' — the US said no. Not no to the treaty itself. No to the cap. The American position is roughly: let countries figure out their own paths, focus on cleanup and recycling. The otter shrugs and says 'national circumstances.' I get it. I also know that the ocean does not have national circumstances.",
+      "generatedAt": "2026-05-03",
+      "modelVersion": "human-draft-v1"
+    },
+    {
+      "sourceRecordType": "policy",
+      "sourceRecordId": "usa-save-our-seas-2.0",
+      "body": "Save Our Seas 2.0 is a US federal law from December 2020. It strengthens the response to marine debris, funds the Marine Debris Foundation, and puts money into recycling. It is genuine cleanup investment. It is also, like Japan's law, downstream — it works on plastic that already exists. Useful. Not the whole picture.",
+      "generatedAt": "2026-05-03",
+      "modelVersion": "human-draft-v1"
+    },
+    {
+      "sourceRecordType": "policy",
+      "sourceRecordId": "usa-ca-sb54",
+      "body": "California, by itself, is bigger than most countries. SB 54, signed in 2022, makes the producers of single-use packaging pay for and clean up their own mess — what grown-ups call 'extended producer responsibility.' By 2032, all single-use packaging sold in California has to be recyclable or compostable, with phased reductions along the way. This is one of the most aggressive plastic laws in the world. The otter is genuinely proud of this one.",
+      "generatedAt": "2026-05-03",
+      "modelVersion": "human-draft-v1"
+    },
+    {
+      "sourceRecordType": "company",
+      "sourceRecordId": "usa-coca-cola",
+      "body": "Coca-Cola once promised a more ambitious recycled-content target and quietly walked it back to about 25% by 2035. That is the company's current published number. I am not here to dunk on them — they sell a lot of bottles, and a real 25% would still be a significant amount of plastic not made from new oil. But a target that has been revised downward deserves a footnote, and the footnote is: watch what gets delivered, not what gets announced.",
+      "generatedAt": "2026-05-03",
+      "modelVersion": "human-draft-v1"
+    }
+  ]
 }

@@ -132,5 +132,28 @@
       "lastUpdated": "2026-05-03"
     }
   ],
-  "newsFeed": []
+  "newsFeed": [],
+  "lobsterTranslations": [
+    {
+      "sourceRecordType": "treaty",
+      "sourceRecordId": "current",
+      "body": "Taiwan is in a strange position at the treaty table — because there isn't a seat for it. Taiwan is not a UN member, so it cannot formally negotiate at the INC. What its environment ministry says, instead, is: we will follow the treaty's eventual rules anyway. The dolphin tells me this very quietly. There is real domestic policy under that promise, but the international microphone stays off. So I read what Taiwan does, not what it gets to say.",
+      "generatedAt": "2026-05-03",
+      "modelVersion": "human-draft-v1"
+    },
+    {
+      "sourceRecordType": "policy",
+      "sourceRecordId": "twn-single-use-plastics-roadmap",
+      "body": "Taiwan has a roadmap. Bags, straws, utensils, drink cups — four categories of single-use plastic that government offices, schools, restaurants, and shops have been progressively phasing out since 2018. The end state is a full ban; the middle state is a lot of small adjustments. If you have ordered bubble tea in Taipei recently and got a paper-ish straw or no straw at all, that is what this policy looks like in your hand.",
+      "generatedAt": "2026-05-03",
+      "modelVersion": "human-draft-v1"
+    },
+    {
+      "sourceRecordType": "company",
+      "sourceRecordId": "twn-formosa-plastics",
+      "body": "I have to be careful here. Formosa Plastics is one of the largest producers of plastic resin in the world — meaning, it makes the raw stuff that becomes everything else. The company publishes sustainability reports about emissions and circular-economy investments. Environmental groups have been openly skeptical: a company whose main product is new plastic has a hard time being the company that reduces new plastic. I am not the judge here. The dolphin just asks: where do the resin pellets that wash up on west-coast beaches actually come from? It is a question worth keeping on the table.",
+      "generatedAt": "2026-05-03",
+      "modelVersion": "human-draft-v1"
+    }
+  ]
 }
