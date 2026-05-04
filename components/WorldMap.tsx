@@ -33,9 +33,9 @@ const STYLE: Record<
     defaultStroke: "#ffffff",
   },
   lobster: {
-    bg: "bg-slate-900",
-    defaultFill: "#374151",
-    defaultStroke: "#0f172a",
+    bg: "",
+    defaultFill: "#1d4e6b",
+    defaultStroke: "#0b1d2a",
   },
 };
 

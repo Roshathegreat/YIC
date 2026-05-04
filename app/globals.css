@@ -3,6 +3,16 @@
 :root {
   --background: #ffffff;
   --foreground: #111111;
+
+  /* Lobster (youth) palette — gameboy-ish */
+  --lob-bg: #0b1d2a;
+  --lob-bg-2: #0f2b3d;
+  --lob-ink: #e7f6ff;
+  --lob-dim: #8fb4c9;
+  --lob-accent: #ffd23f;
+  --lob-coral: #ff6b6b;
+  --lob-kelp: #7dd3a0;
+  --lob-deep: #1d4e6b;
 }
 
 html,
@@ -16,4 +26,157 @@ body {
 
 a {
   color: inherit;
+}
+
+/* ---------- Pixel / retro layer (lobster surface only) ---------- */
+
+.pixel {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Courier New",
+    monospace;
+  font-feature-settings: "ss01", "tnum";
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  font-size: 11px;
+  image-rendering: pixelated;
+}
+
+.pixel-lg {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Courier New",
+    monospace;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.lob-screen {
+  background-color: var(--lob-bg);
+  background-image:
+    radial-gradient(circle at 20% 0%, rgba(125, 211, 160, 0.08), transparent 60%),
+    radial-gradient(circle at 80% 100%, rgba(255, 210, 63, 0.06), transparent 55%),
+    repeating-linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.018) 0px,
+      rgba(255, 255, 255, 0.018) 1px,
+      transparent 1px,
+      transparent 3px
+    );
+  color: var(--lob-ink);
+  min-height: 100vh;
+}
+
+.lob-card {
+  background: var(--lob-bg-2);
+  border: 2px solid var(--lob-deep);
+  box-shadow:
+    0 0 0 2px var(--lob-bg),
+    0 4px 0 0 rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+}
+
+.lob-card-tight {
+  background: var(--lob-bg-2);
+  border: 2px solid var(--lob-deep);
+  border-radius: 4px;
+}
+
+.lob-btn {
+  display: inline-block;
+  background: var(--lob-accent);
+  color: #1a1207;
+  border: 2px solid #1a1207;
+  padding: 6px 12px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-size: 12px;
+  font-weight: 700;
+  box-shadow: 0 3px 0 0 #1a1207;
+  text-decoration: none;
+}
+
+.lob-btn:hover {
+  transform: translate(0, 1px);
+  box-shadow: 0 2px 0 0 #1a1207;
+}
+
+.lob-btn-ghost {
+  display: inline-block;
+  background: transparent;
+  color: var(--lob-ink);
+  border: 2px solid var(--lob-ink);
+  padding: 6px 12px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.lob-tag {
+  display: inline-block;
+  background: var(--lob-deep);
+  color: var(--lob-ink);
+  border: 1px solid var(--lob-ink);
+  padding: 2px 6px;
+  font-family: ui-monospace, monospace;
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 0.05em;
+  border-radius: 2px;
+}
+
+.lob-tag-warn {
+  background: var(--lob-coral);
+  color: #1a0b0b;
+  border-color: #1a0b0b;
+}
+
+.lob-tag-ok {
+  background: var(--lob-kelp);
+  color: #07221a;
+  border-color: #07221a;
+}
+
+.lob-link {
+  color: var(--lob-accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.lob-link:hover {
+  filter: brightness(1.1);
+}
+
+.lob-divider {
+  height: 0;
+  border-top: 2px dashed var(--lob-deep);
+  margin: 1.5rem 0;
+}
+
+/* Health bar / progress chip */
+.lob-bar {
+  position: relative;
+  height: 12px;
+  background: #06121a;
+  border: 2px solid #06121a;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.lob-bar > span {
+  display: block;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    var(--lob-coral) 0%,
+    var(--lob-accent) 60%,
+    var(--lob-kelp) 100%
+  );
+}
+
+/* Ledger surface stays clean and editorial */
+.ledger-shell {
+  background: #ffffff;
+  color: #111;
 }
