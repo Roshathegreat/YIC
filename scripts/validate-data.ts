@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { CountrySchema } from "../lib/schema";
+import { validateCrossRefs } from "../lib/db";
 
 const DATA_DIR = path.join(process.cwd(), "data", "countries");
 const COUNTRIES = ["japan", "usa", "taiwan"];
@@ -11,7 +12,8 @@ for (const id of COUNTRIES) {
   try {
     const raw = fs.readFileSync(filePath, "utf8");
     const parsed = JSON.parse(raw);
-    CountrySchema.parse(parsed);
+    const country = CountrySchema.parse(parsed);
+    validateCrossRefs(country);
     console.log(`ok  data/countries/${id}.json`);
   } catch (err) {
     failed += 1;

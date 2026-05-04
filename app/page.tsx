@@ -20,7 +20,7 @@ export default function LedgerHome() {
         </p>
         <p className="mt-2 text-sm">
           <Link href="/lobster" className="underline">
-            Or visit the lobster's world &rarr;
+            Or visit Wooby&apos;s Tide Report — the same data, written for kids &rarr;
           </Link>
         </p>
       </header>

@@ -68,6 +68,7 @@ export default async function CountryPage({
           {country.domesticPolicies.map((p) => (
             <RecordCard
               key={p.id}
+              id={p.id}
               title={p.name}
               subtitle={p.enacted ? `Enacted ${p.enacted}` : undefined}
               badge={p.scope}
@@ -93,6 +94,7 @@ export default async function CountryPage({
           {country.companies.map((c) => (
             <RecordCard
               key={c.id}
+              id={c.id}
               title={c.name}
               subtitle={c.sector}
               lastUpdated={c.lastUpdated}
