@@ -135,5 +135,76 @@
       "lastUpdated": "2026-05-03"
     }
   ],
-  "newsFeed": []
+  "newsFeed": [
+    {
+      "id": "usa-news-sb54-rollout",
+      "headline": "California's SB 54 reshapes packaging rules as 2032 deadline approaches",
+      "url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202120220SB54",
+      "publisher": "California Legislative Information",
+      "publishedDate": "2025-10-15",
+      "summary": "Implementation milestones for California's Plastic Pollution Prevention and Packaging Producer Responsibility Act continue, with regulators publishing producer obligations ahead of the 2032 recyclability deadline.",
+      "addedDate": "2026-05-03",
+      "kidHeadline": "California is making the companies that make plastic packaging clean it up",
+      "iseDispatch": "California passed a law that flips the question. Instead of asking shoppers what to do with the plastic wrapper, it asks the company that made the wrapper. By the year 2032, every single-use package sold in California has to be recyclable or compostable — and the producers have to pay into a cleanup fund.",
+      "sourceRecordId": "usa-ca-sb54",
+      "sourceRecordType": "policy",
+      "vocab": [
+        {
+          "term": "EPR",
+          "kidDefinition": "Extended Producer Responsibility — a rule that makes the company that made the packaging pay to clean it up."
+        }
+      ]
+    },
+    {
+      "id": "usa-news-coca-cola-target",
+      "headline": "Coca-Cola revises recycled-content target to 25% by 2035",
+      "url": "https://www.coca-colacompany.com/sustainability/packaging-sustainability",
+      "publisher": "The Coca-Cola Company",
+      "publishedDate": "2024-12-02",
+      "summary": "Coca-Cola updated its global packaging targets, lowering and extending earlier recycled-content commitments to a 25% level by 2035.",
+      "addedDate": "2026-05-03",
+      "kidHeadline": "Coca-Cola moved its plastic promise — and not in the direction you'd hope",
+      "iseDispatch": "A few years ago Coca-Cola said its bottles would have a lot of recycled plastic in them by 2030. They have now changed that promise: at least 25% recycled by 2035. That is later, and it is less. Wooby says it is okay to be a little disappointed when grown-ups walk back a promise.",
+      "sourceRecordId": "usa-coca-cola",
+      "sourceRecordType": "company",
+      "vocab": [
+        {
+          "term": "recycling",
+          "kidDefinition": "Turning used plastic back into raw material so it can be made into something new."
+        }
+      ]
+    }
+  ],
+  "lobsterBriefs": [
+    {
+      "recordId": "usa-ca-sb54",
+      "recordType": "policy",
+      "woobyHeadline": "California's law makes the makers of plastic clean it up",
+      "woobyBody": "Most of the time, when you finish a bag of chips, you are the one who has to figure out what to do with the empty bag. California decided that's backwards. Their law, called SB 54, says the company that made the bag is responsible for it. By 2032, every single-use package sold in California has to be recyclable or compostable, and the companies pay into a fund that helps clean up the rest.",
+      "vocab": [
+        {
+          "term": "EPR",
+          "kidDefinition": "Extended Producer Responsibility — a rule that makes the company that made the packaging pay to clean it up."
+        },
+        {
+          "term": "single-use",
+          "kidDefinition": "A thing you use once and throw away."
+        }
+      ],
+      "takeaway": "The cleanup question doesn't have to land on you. Laws can move it back to the maker."
+    },
+    {
+      "recordId": "usa-coca-cola",
+      "recordType": "company",
+      "woobyHeadline": "Coca-Cola's bottle promise keeps changing",
+      "woobyBody": "Coca-Cola is one of the world's biggest sellers of plastic bottles. They have made promises about using more recycled plastic — and they have changed those promises more than once. The newest version: at least 25% recycled material in their packaging by 2035. That is less, and later, than what they used to say. Watching how a promise changes over time is part of how we hold companies to their word.",
+      "vocab": [
+        {
+          "term": "virgin plastic",
+          "kidDefinition": "Brand-new plastic made from oil or gas — not from recycled stuff."
+        }
+      ],
+      "takeaway": "When a company moves a promise, write down the old one and the new one. That is how we keep score."
+    }
+  ]
 }

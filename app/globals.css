@@ -3,6 +3,17 @@
 :root {
   --background: #ffffff;
   --foreground: #111111;
+
+  /* Tide Report palette (kid surface) */
+  --tide-bg: #fbf6e9;
+  --tide-fg: #1b2230;
+  --tide-muted: #5b6373;
+  --tide-card: #ffffff;
+  --tide-border: #1b2230;
+  --tide-kelp: #1f6b4a;
+  --tide-water: #2a6f97;
+  --tide-shell: #f4d35e;
+  --tide-coral: #d8431a;
 }
 
 html,
@@ -16,4 +27,84 @@ body {
 
 a {
   color: inherit;
+}
+
+/* Tide Report scope — applied via the lobster layout body class. */
+.tide {
+  background-color: var(--tide-bg);
+  color: var(--tide-fg);
+  background-image:
+    linear-gradient(to right, rgba(27, 34, 48, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(27, 34, 48, 0.04) 1px, transparent 1px);
+  background-size: 16px 16px;
+}
+
+.tide a {
+  color: var(--tide-water);
+}
+
+.tide .tide-card {
+  background: var(--tide-card);
+  border: 3px solid var(--tide-border);
+  border-radius: 6px;
+  box-shadow: 4px 4px 0 var(--tide-border);
+}
+
+.tide .tide-card--kelp {
+  border-color: var(--tide-kelp);
+  box-shadow: 4px 4px 0 var(--tide-kelp);
+}
+
+.tide .tide-card--water {
+  border-color: var(--tide-water);
+  box-shadow: 4px 4px 0 var(--tide-water);
+}
+
+.tide .tide-wordmark {
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+
+.tide .tide-mono {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas,
+    "Liberation Mono", monospace;
+}
+
+.tide .tide-chip {
+  display: inline-block;
+  background: var(--tide-shell);
+  color: var(--tide-fg);
+  border: 2px solid var(--tide-border);
+  border-radius: 999px;
+  padding: 2px 10px;
+  font-size: 0.75rem;
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas,
+    "Liberation Mono", monospace;
+  margin: 2px 4px 2px 0;
+}
+
+.tide .tide-callout {
+  background: #eaf3ed;
+  border-left: 6px solid var(--tide-kelp);
+  padding: 10px 14px;
+  border-radius: 4px;
+  font-size: 0.95rem;
+}
+
+.tide .tide-takeaway {
+  background: #fff3c4;
+  border-left: 6px solid var(--tide-coral);
+  padding: 10px 14px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.tide .tide-byline {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas,
+    "Liberation Mono", monospace;
+  font-size: 0.8rem;
+  color: var(--tide-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
 }

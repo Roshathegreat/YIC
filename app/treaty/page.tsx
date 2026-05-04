@@ -24,7 +24,8 @@ export default function TreatyComparePage() {
         {countries.map((c) => (
           <section
             key={c.id}
-            className="border border-gray-200 rounded-md p-4 bg-white"
+            id={`treaty-${c.id}`}
+            className="border border-gray-200 rounded-md p-4 bg-white scroll-mt-20 target:border-amber-400 target:bg-amber-50"
           >
             <div
               className="h-1 w-12 rounded mb-3"

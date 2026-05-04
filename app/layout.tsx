@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "YIC — Plastic Governance Ledger",
+  title: "YIC — Marine Plastic Pollution Ledger & Wooby's Tide Report",
   description:
-    "Sourced plastic policy and corporate disclosure data for Japan, the United States, and Taiwan, with a youth-facing translation by the lobster Ise.",
+    "A sourced record of plastic policy, corporate disclosures, and treaty positions for Japan, the United States, and Taiwan — paired with Wooby's Tide Report, a kid-facing news layer about marine plastic pollution.",
 };
 
 export default function RootLayout({

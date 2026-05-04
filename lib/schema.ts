@@ -44,6 +44,22 @@ export const CompanySchema = z.object({
   lastUpdated: ISODate,
 });
 
+export const VocabSchema = z.object({
+  term: z.string().min(1),
+  kidDefinition: z.string().min(1),
+});
+
+export const RecordTypeSchema = z.enum(["policy", "company", "treaty"]);
+
+export const LobsterBriefSchema = z.object({
+  recordId: z.string().min(1),
+  recordType: RecordTypeSchema,
+  woobyHeadline: z.string().min(1),
+  woobyBody: z.string().min(1),
+  vocab: z.array(VocabSchema).max(4),
+  takeaway: z.string().min(1),
+});
+
 export const NewsItemSchema = z.object({
   id: z.string(),
   headline: z.string(),
@@ -52,6 +68,12 @@ export const NewsItemSchema = z.object({
   publishedDate: ISODate,
   summary: z.string(),
   addedDate: ISODate,
+  kidHeadline: z.string().optional(),
+  kidSummary: z.string().optional(),
+  iseDispatch: z.string().optional(),
+  sourceRecordId: z.string().optional(),
+  sourceRecordType: RecordTypeSchema.optional(),
+  vocab: z.array(VocabSchema).max(2).optional(),
 });
 
 export const BeppuNodeSchema = z.object({
@@ -94,6 +116,7 @@ export const CountrySchema = z.object({
   domesticPolicies: z.array(PolicySchema),
   companies: z.array(CompanySchema),
   newsFeed: z.array(NewsItemSchema),
+  lobsterBriefs: z.array(LobsterBriefSchema).default([]),
   deepNode: BeppuNodeSchema.optional(),
 });
 
@@ -102,3 +125,6 @@ export type Source = z.infer<typeof SourceSchema>;
 export type Policy = z.infer<typeof PolicySchema>;
 export type Company = z.infer<typeof CompanySchema>;
 export type NewsItem = z.infer<typeof NewsItemSchema>;
+export type LobsterBrief = z.infer<typeof LobsterBriefSchema>;
+export type Vocab = z.infer<typeof VocabSchema>;
+export type RecordType = z.infer<typeof RecordTypeSchema>;

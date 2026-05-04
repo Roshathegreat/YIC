@@ -132,5 +132,72 @@
       "lastUpdated": "2026-05-03"
     }
   ],
-  "newsFeed": []
+  "newsFeed": [
+    {
+      "id": "twn-news-roadmap-progress",
+      "headline": "Taiwan continues phased single-use plastics restrictions",
+      "url": "https://www.moenv.gov.tw/en/",
+      "publisher": "Ministry of Environment, Taiwan",
+      "publishedDate": "2025-06-20",
+      "summary": "Taiwan's Ministry of Environment reports continuing rollout of restrictions on single-use plastic bags, straws, utensils, and beverage cups across schools, government agencies, and retail.",
+      "addedDate": "2026-05-03",
+      "kidHeadline": "Taiwan keeps shrinking the list of plastics you can grab for free",
+      "iseDispatch": "In Taiwan, the rules about throwaway plastic keep getting stricter. Bags, straws, forks, cups — one by one, places like schools and shops have to stop handing them out for free. The plan started back in 2018 and is still rolling out, year by year.",
+      "sourceRecordId": "twn-single-use-plastics-roadmap",
+      "sourceRecordType": "policy",
+      "vocab": [
+        {
+          "term": "single-use",
+          "kidDefinition": "A thing you use once and throw away."
+        }
+      ]
+    },
+    {
+      "id": "twn-news-formosa-scrutiny",
+      "headline": "Formosa Plastics Group faces continued scrutiny over upstream plastic production",
+      "url": "https://www.fpg.com.tw/en",
+      "publisher": "Formosa Plastics Group",
+      "publishedDate": "2025-04-08",
+      "summary": "Environmental groups continue to press Formosa Plastics, one of Asia's largest petrochemical producers, over the scale of its primary plastic resin production and disclosure of emissions.",
+      "addedDate": "2026-05-03",
+      "kidHeadline": "One Taiwanese company makes a lot of the world's brand-new plastic",
+      "iseDispatch": "Most stories about plastic talk about the bag or the bottle at the end. Formosa Plastics is at the other end of the line — they make the raw plastic itself, in giant amounts. Environmental groups keep asking how much they make, and how much smaller they plan to get. That conversation is not finished.",
+      "sourceRecordId": "twn-formosa-plastics",
+      "sourceRecordType": "company",
+      "vocab": [
+        {
+          "term": "virgin plastic",
+          "kidDefinition": "Brand-new plastic made from oil or gas — not from recycled stuff."
+        }
+      ]
+    }
+  ],
+  "lobsterBriefs": [
+    {
+      "recordId": "twn-single-use-plastics-roadmap",
+      "recordType": "policy",
+      "woobyHeadline": "Taiwan is phasing out throwaway plastic, one item at a time",
+      "woobyBody": "Taiwan's plan started in 2018. Instead of banning everything at once, they listed the plastics they wanted to phase out — bags, straws, utensils, and beverage cups — and told different places to stop using them in stages. Government offices first, then schools, then restaurants, then stores. Each year the list of places that have to follow the rule gets longer.",
+      "vocab": [
+        {
+          "term": "single-use",
+          "kidDefinition": "A thing you use once and throw away."
+        }
+      ],
+      "takeaway": "You don't have to fix everything in one day. A roadmap means you fix it step by step."
+    },
+    {
+      "recordId": "twn-formosa-plastics",
+      "recordType": "company",
+      "woobyHeadline": "One company in Taiwan makes a lot of the world's raw plastic",
+      "woobyBody": "Most of what you hear about plastic is about the wrapper or the bottle — the end of the story. Formosa Plastics is at the start of the story. They take oil and gas and turn them into the raw plastic that everyone else uses. Companies that big have a huge effect on how much new plastic ends up in the world, which is why people keep asking them tough questions.",
+      "vocab": [
+        {
+          "term": "production cap",
+          "kidDefinition": "A limit on how much new plastic the world is allowed to make each year."
+        }
+      ],
+      "takeaway": "If we only think about the bottle, we miss where it came from."
+    }
+  ]
 }

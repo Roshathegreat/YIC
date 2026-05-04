@@ -134,7 +134,78 @@
       "lastUpdated": "2026-05-03"
     }
   ],
-  "newsFeed": [],
+  "newsFeed": [
+    {
+      "id": "jpn-news-bag-charge-anniversary",
+      "headline": "Five years on, Japan's plastic bag charge has changed shopping habits",
+      "url": "https://www.meti.go.jp/english/policy/recycle/plasticbag.html",
+      "publisher": "Ministry of Economy, Trade and Industry",
+      "publishedDate": "2025-07-01",
+      "summary": "METI marks five years since the nationwide bag-charge rule took effect, reporting sustained reductions in single-use bag use at convenience stores and supermarkets.",
+      "addedDate": "2026-05-03",
+      "kidHeadline": "Five years of paying for plastic bags — and Japan is using a lot fewer",
+      "iseDispatch": "I went to the konbini today and watched ten people in a row bring their own bag. Five years ago that line would have looked very different. The rule that started this is the bag charge from 2020.",
+      "sourceRecordId": "jpn-bag-charge-2020",
+      "sourceRecordType": "policy",
+      "vocab": [
+        {
+          "term": "single-use",
+          "kidDefinition": "A thing you use once and throw away — like a plastic straw or a takeout fork."
+        }
+      ]
+    },
+    {
+      "id": "jpn-news-suntory-rpet",
+      "headline": "Suntory pushes ahead with recycled-PET bottle rollout",
+      "url": "https://www.suntory.com/csr/activity/environment/eco/plastic/",
+      "publisher": "Suntory Holdings",
+      "publishedDate": "2025-09-12",
+      "summary": "Suntory reiterates its goal to switch all PET bottles globally to recycled or plant-based materials by 2030, citing progress in Japan and Southeast Asia.",
+      "addedDate": "2026-05-03",
+      "kidHeadline": "Suntory says all its plastic bottles will be recycled or plant-based by 2030",
+      "iseDispatch": "Suntory makes a lot of the drinks I see at vending machines. They say every single one of those bottles will be made from recycled plastic — or from plants — by the year 2030. That is a big promise. Wooby and I will be checking in.",
+      "sourceRecordId": "jpn-suntory",
+      "sourceRecordType": "company",
+      "vocab": [
+        {
+          "term": "PET",
+          "kidDefinition": "A common kind of clear plastic — the stuff most water and soda bottles are made of."
+        }
+      ]
+    }
+  ],
+  "lobsterBriefs": [
+    {
+      "recordId": "jpn-bag-charge-2020",
+      "recordType": "policy",
+      "woobyHeadline": "Japan made stores charge for plastic bags",
+      "woobyBody": "In July 2020, Japan made a new rule: every store has to charge money for a plastic shopping bag. It is not a huge amount — usually a few yen — but it is just enough that lots of people decided to bring their own bag instead. After the first year, Japan was using way fewer bags than before.",
+      "vocab": [
+        {
+          "term": "single-use",
+          "kidDefinition": "A thing you use once and throw away."
+        }
+      ],
+      "takeaway": "A small price tag on a plastic bag changed what millions of people do every day."
+    },
+    {
+      "recordId": "jpn-suntory",
+      "recordType": "company",
+      "woobyHeadline": "Suntory promised to stop making brand-new plastic bottles",
+      "woobyBody": "Suntory is a huge Japanese drink company. They have promised that by the year 2030, every single one of their plastic bottles around the world will be made from recycled plastic or from plants — not from brand-new oil-based plastic. That is the kind of promise grown-ups call a corporate commitment, and it is the kind of thing we should check on later to see if it really happened.",
+      "vocab": [
+        {
+          "term": "virgin plastic",
+          "kidDefinition": "Brand-new plastic made from oil or gas — not from recycled stuff."
+        },
+        {
+          "term": "recycling",
+          "kidDefinition": "Turning used plastic back into raw material so it can be made into something new."
+        }
+      ],
+      "takeaway": "Promises are easy to make. We can keep score by checking back in 2030."
+    }
+  ],
   "deepNode": {
     "marineDebrisData": "Beppu Bay receives marine debris from rivers draining the Oita prefecture watershed and from drift currents along the Inland Sea. Local beach surveys consistently find single-use plastic packaging, fishing gear fragments, and microplastics. Quantitative figures pending — user to fill from local source.",
     "cleanupOrgs": [
