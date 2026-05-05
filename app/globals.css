@@ -193,3 +193,101 @@ a { color: inherit; }
   outline-offset: 2px;
   border-radius: 6px;
 }
+
+/* --- Ledger surface helpers --- */
+.ledger-surface {
+  background:
+    repeating-linear-gradient(
+      0deg,
+      transparent 0 27px,
+      rgba(31, 27, 22, 0.04) 27px 28px
+    ),
+    var(--ledger-bg);
+}
+
+.ledger-rule {
+  border-color: var(--ledger-rule);
+}
+
+/* --- Lobster (Tide Report) surface --- */
+.tide-surface {
+  background:
+    radial-gradient(circle at 20% 0%, rgba(110, 231, 183, 0.08), transparent 40%),
+    radial-gradient(circle at 80% 100%, rgba(255, 159, 106, 0.08), transparent 40%),
+    var(--tide-bg);
+  color: var(--tide-foam);
+}
+
+/* Pixel display font fallback. Uses system mono so the build stays
+   self-contained — no external font fetch. */
+.pixel {
+  font-family: "Press Start 2P", "VT323", ui-monospace, "Cascadia Mono",
+    "Menlo", monospace;
+  letter-spacing: 0.02em;
+  font-weight: 700;
+  text-transform: uppercase;
+  image-rendering: pixelated;
+}
+
+/* Chunky pixel-style border for cards on the kid surface. */
+.pixel-card {
+  background: var(--tide-deep);
+  border: 2px solid var(--tide-foam);
+  box-shadow:
+    4px 4px 0 0 var(--tide-coral),
+    8px 8px 0 0 rgba(0, 0, 0, 0.35);
+  border-radius: 2px;
+}
+
+.pixel-card--kelp {
+  box-shadow:
+    4px 4px 0 0 var(--tide-kelp),
+    8px 8px 0 0 rgba(0, 0, 0, 0.35);
+}
+
+.pixel-card--sun {
+  box-shadow:
+    4px 4px 0 0 var(--tide-sun),
+    8px 8px 0 0 rgba(0, 0, 0, 0.35);
+}
+
+/* Tag chip used by Wooby briefs to label the source record. */
+.tide-chip {
+  display: inline-block;
+  padding: 2px 8px;
+  border: 1px solid var(--tide-foam);
+  border-radius: 999px;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* Vocab gloss: tiny dotted underline + pop tooltip on hover. */
+.vocab {
+  border-bottom: 1px dotted currentColor;
+  cursor: help;
+}
+
+/* Marquee headline strip for the news page. */
+.tide-marquee {
+  white-space: nowrap;
+  overflow: hidden;
+  border-top: 2px solid var(--tide-foam);
+  border-bottom: 2px solid var(--tide-foam);
+  padding: 6px 0;
+  background: var(--tide-deep);
+}
+.tide-marquee__track {
+  display: inline-block;
+  padding-left: 100%;
+  animation: tide-marquee 28s linear infinite;
+}
+@keyframes tide-marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-100%); }
+}
+
+/* Reduce-motion respect. */
+@media (prefers-reduced-motion: reduce) {
+  .tide-marquee__track { animation: none; padding-left: 0; }
+}

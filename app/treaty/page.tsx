@@ -68,6 +68,15 @@ export default function TreatyComparePage() {
           </Link>
         </p>
       </div>
+      <p className="mt-8 text-sm">
+        <Link
+          href="/lobster/court"
+          className="underline decoration-dotted"
+        >
+          Read the kid-friendly version on Wooby&apos;s Tide Report &rarr;
+        </Link>
+      </p>
+      </div>
     </main>
   );
 }
