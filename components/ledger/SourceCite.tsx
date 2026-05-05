@@ -2,7 +2,7 @@ import type { Source } from "@/lib/schema";
 
 export function SourceCite({ source }: { source: Source }) {
   return (
-    <span className="text-xs text-gray-600">
+    <span className="text-xs text-[color:var(--muted)]">
       <a
         href={source.url}
         target="_blank"
@@ -11,12 +11,14 @@ export function SourceCite({ source }: { source: Source }) {
       >
         {source.publisher}
       </a>
-      <span className="ml-1 text-gray-400">
+      <span className="ml-1">
         (accessed {source.accessedDate}
         {source.verified === false ? ", unverified" : ""})
       </span>
       {source.note ? (
-        <span className="ml-1 italic text-amber-700">— {source.note}</span>
+        <span className="ml-1 italic text-[color:var(--coral)]">
+          — {source.note}
+        </span>
       ) : null}
     </span>
   );
@@ -24,7 +26,11 @@ export function SourceCite({ source }: { source: Source }) {
 
 export function SourceList({ sources }: { sources: Source[] }) {
   if (sources.length === 0) {
-    return <p className="text-xs italic text-amber-700">No sources yet.</p>;
+    return (
+      <p className="text-xs italic text-[color:var(--coral)]">
+        No sources yet.
+      </p>
+    );
   }
   return (
     <ul className="mt-1 space-y-1">

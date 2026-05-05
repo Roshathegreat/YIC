@@ -1,34 +1,34 @@
 import Link from "next/link";
 import { getAllCountries } from "@/lib/db";
 import { VocabBox } from "@/components/lobster/Vocab";
+import { CountryDot } from "@/components/lobster/CountryMark";
 import { WOOBY_VOICE } from "@/lib/lobster-voice";
 
 export default function LobsterCourtPage() {
   const countries = getAllCountries();
   return (
-    <main className="tide-surface min-h-screen">
-      <div className="max-w-4xl mx-auto px-6 py-8">
-        <nav className="mb-4 text-sm">
+    <main className="surface-paper--kid">
+      <div className="max-w-4xl mx-auto px-6 py-10">
+        <nav className="mb-6 text-sm">
           <Link
             href="/lobster"
-            className="underline decoration-dotted text-[var(--tide-foam)]/80"
+            className="font-semibold text-[color:var(--coral)] underline decoration-2 underline-offset-4"
           >
-            &larr; back to {WOOBY_VOICE.name}'s Tide Report
+            &larr; Back to {WOOBY_VOICE.name}&apos;s Tide Report
           </Link>
         </nav>
 
-        <header className="mb-6">
-          <p className="pixel text-xs text-[var(--tide-sun)]">
-            THE BIG TREATY ROOM
-          </p>
-          <h1 className="pixel text-2xl md:text-3xl text-[var(--tide-foam)] mt-1 leading-snug">
-            WHO WANTS WHAT AT THE UN
+        <header className="mb-8">
+          <p className="eyebrow">The big room</p>
+          <h1 className="display text-4xl md:text-5xl mt-2">
+            Treaty talks, in plain words
           </h1>
-          <p className="text-[var(--tide-foam)]/80 mt-3 leading-relaxed">
-            Every country sends a delegate to a giant meeting where they argue
-            out a global plastic <em>treaty</em> — that's a rulebook the whole
-            world has to follow. Here's where each of our three countries
-            stands. (Taiwan isn't in the room, but we're saving them a seat.)
+          <p className="mt-3 text-lg max-w-2xl">
+            Every country sends a delegate to a giant meeting where they
+            argue out a global plastic <em>treaty</em> — a rulebook the
+            whole world has to follow. Here&apos;s where each of our three
+            countries stands. (Taiwan isn&apos;t in the room, but we&apos;re
+            saving them a seat.)
           </p>
         </header>
 
@@ -38,45 +38,33 @@ export default function LobsterCourtPage() {
               (b) => b.refType === "treaty",
             );
             return (
-              <article
-                key={c.id}
-                className="pixel-card pixel-card--kelp p-4 flex flex-col"
-              >
+              <article key={c.id} className="card flex flex-col">
                 <div className="flex items-center gap-2">
-                  <span className="text-3xl" aria-hidden>
-                    {c.marineAnimal.emoji}
-                  </span>
-                  <h2 className="pixel text-base text-[var(--tide-foam)]">
-                    {c.displayName}
-                  </h2>
+                  <CountryDot id={c.id} />
+                  <h2 className="display text-xl">{c.displayName}</h2>
                 </div>
-                <p className="text-xs text-[var(--tide-foam)]/70 mt-1">
-                  Speaking through: {c.marineAnimal.species.split("(")[0].trim()}
+                <p className="text-xs text-[color:var(--muted)] mt-1">
+                  Speaking through:{" "}
+                  {c.marineAnimal.species.split("(")[0].trim()}
                 </p>
 
                 {treatyBrief ? (
                   <>
-                    <h3 className="pixel text-xs text-[var(--tide-sun)] mt-4">
-                      THE QUICK VERSION
-                    </h3>
-                    <p className="text-[var(--tide-foam)] mt-1 text-sm leading-relaxed">
-                      {treatyBrief.body}
-                    </p>
+                    <p className="eyebrow mt-4">The quick version</p>
+                    <p className="mt-1 text-sm">{treatyBrief.body}</p>
                   </>
                 ) : null}
 
-                <h3 className="pixel text-xs text-[var(--tide-sun)] mt-4">
-                  THE GROWN-UP VERSION
-                </h3>
-                <p className="text-[var(--tide-foam)]/90 mt-1 text-xs leading-relaxed">
+                <p className="eyebrow mt-4">The grown-up version</p>
+                <p className="mt-1 text-xs text-[color:var(--muted)]">
                   {c.treatyPosition.inc52Position}
                 </p>
 
                 <Link
                   href={`/countries/${c.id}#treaty`}
-                  className="mt-4 text-xs underline decoration-dotted text-[var(--tide-foam)]/80"
+                  className="mt-4 text-sm font-semibold text-[color:var(--coral)] underline decoration-2 underline-offset-4"
                 >
-                  check the source &rarr;
+                  See the source &rarr;
                 </Link>
               </article>
             );
@@ -96,24 +84,26 @@ export default function LobsterCourtPage() {
           />
         </section>
 
-        <section className="mt-8 pixel-card pixel-card--sun p-4">
-          <p className="pixel text-xs text-[var(--tide-sun)] mb-2">
-            ◆ ASK YOURSELF ◆
+        <section className="mt-8 card card--coral">
+          <p className="eyebrow">Ask yourself</p>
+          <p className="display text-2xl mt-2">
+            Both Japan and the United States want a treaty, but neither one
+            wants a top limit on how much new plastic gets made.
           </p>
-          <p className="text-[var(--tide-foam)] leading-relaxed">
-            Both Japan and the United States say they want a treaty, but
-            neither one wants a top limit on how much new plastic gets made.
-            If you were in the room, would you push for the cap? Or trust
-            that recycling and cleanup can catch up?
+          <p className="mt-3">
+            If you were in the room, would you push for the cap? Or would you
+            trust that recycling and cleanup can catch up?
           </p>
         </section>
 
-        <p className="mt-6 text-xs text-[var(--tide-foam)]/70">
-          Want every position with full source citations? Visit the{" "}
-          <Link href="/treaty" className="underline decoration-dotted">
-            Ledger treaty page
+        <p className="mt-6 text-sm text-[color:var(--muted)]">
+          Want every position with full source citations?{" "}
+          <Link
+            href="/treaty"
+            className="font-semibold text-[color:var(--coral)] underline decoration-2 underline-offset-4"
+          >
+            Visit the Ledger treaty page &rarr;
           </Link>
-          .
         </p>
       </div>
     </main>

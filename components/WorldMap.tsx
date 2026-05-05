@@ -25,17 +25,15 @@ interface WorldMapProps {
 
 const STYLE: Record<
   Variant,
-  { bg: string; defaultFill: string; defaultStroke: string }
+  { defaultFill: string; defaultStroke: string }
 > = {
   ledger: {
-    bg: "bg-white",
-    defaultFill: "#e5e7eb",
-    defaultStroke: "#ffffff",
+    defaultFill: "#e7d9be",
+    defaultStroke: "#fff8ee",
   },
   lobster: {
-    bg: "bg-slate-900",
-    defaultFill: "#374151",
-    defaultStroke: "#0f172a",
+    defaultFill: "#f1dfb8",
+    defaultStroke: "#fff8ee",
   },
 };
 
@@ -70,7 +68,7 @@ export default function WorldMap({ variant, countries }: WorldMapProps) {
     variant === "ledger" ? `/countries/${id}` : `/lobster/countries/${id}`;
 
   return (
-    <div className={`w-full ${style.bg} rounded-lg overflow-hidden`}>
+    <div className="w-full rounded-md overflow-hidden">
       <ComposableMap
         projection="geoEqualEarth"
         projectionConfig={{ scale: 155, center: [10, 10] }}
@@ -102,7 +100,7 @@ export default function WorldMap({ variant, countries }: WorldMapProps) {
                       stroke: style.defaultStroke,
                       strokeWidth: 0.75,
                       outline: "none",
-                      filter: isHighlighted ? "brightness(0.85)" : "none",
+                      filter: isHighlighted ? "brightness(0.9)" : "none",
                       cursor: isHighlighted ? "pointer" : "default",
                     },
                     pressed: {
@@ -116,6 +114,8 @@ export default function WorldMap({ variant, countries }: WorldMapProps) {
           }
         </Geographies>
 
+        {/* Country pins on the kid surface — simple round dot, country
+            label underneath. No emoji. */}
         {variant === "lobster" &&
           countries.map((c) => {
             const centroid = centroidsByCountryId.get(c.id);
@@ -127,12 +127,25 @@ export default function WorldMap({ variant, countries }: WorldMapProps) {
                 onClick={() => router.push(hrefFor(c.id))}
                 style={{ default: { cursor: "pointer" } }}
               >
+                <circle
+                  r={6}
+                  fill={c.accentColor}
+                  stroke="#0e2a3a"
+                  strokeWidth={1.5}
+                />
                 <text
                   textAnchor="middle"
-                  y={5}
-                  style={{ fontSize: 18, userSelect: "none" }}
+                  y={20}
+                  style={{
+                    fontSize: 10,
+                    fontWeight: 700,
+                    fill: "#0e2a3a",
+                    paintOrder: "stroke",
+                    stroke: "#fff8ee",
+                    strokeWidth: 3,
+                  }}
                 >
-                  {c.marineAnimal.emoji}
+                  {c.displayName}
                 </text>
               </Marker>
             );

@@ -2,21 +2,22 @@ import Link from "next/link";
 import type { Country, LobsterBrief } from "@/lib/schema";
 import { resolveBriefTarget } from "@/lib/db";
 import { VocabBox } from "./Vocab";
+import { CountryDot } from "./CountryMark";
 
 const REF_LABEL: Record<LobsterBrief["refType"], string> = {
-  treaty: "TREATY",
-  policy: "LAW",
-  company: "COMPANY",
-  news: "NEWS",
-  beppu: "HOME PORT",
+  treaty: "Treaty",
+  policy: "Law",
+  company: "Company",
+  news: "News",
+  beppu: "Home port",
 };
 
-const CARD_FLAVOR: Record<LobsterBrief["refType"], string> = {
-  treaty: "pixel-card pixel-card--sun",
-  policy: "pixel-card pixel-card--kelp",
-  company: "pixel-card",
-  news: "pixel-card pixel-card--sun",
-  beppu: "pixel-card pixel-card--kelp",
+const TAG_FLAVOR: Record<LobsterBrief["refType"], string> = {
+  treaty: "tag--coral",
+  policy: "tag--teal",
+  company: "tag",
+  news: "tag--sun",
+  beppu: "tag--teal",
 };
 
 export function BriefCard({
@@ -28,35 +29,41 @@ export function BriefCard({
 }) {
   const target = resolveBriefTarget(country, brief);
   return (
-    <article className={`${CARD_FLAVOR[brief.refType]} p-4`}>
-      <header className="flex items-center gap-2 mb-2">
-        <span className="tide-chip text-[var(--tide-kelp)]">
+    <article className="card">
+      <header className="flex items-center gap-2 mb-3">
+        <span className={`tag ${TAG_FLAVOR[brief.refType]}`}>
           {REF_LABEL[brief.refType]}
         </span>
-        <span className="text-xs text-[var(--tide-foam)]/70">
+        <span className="inline-flex items-center gap-2 text-sm text-[color:var(--muted)]">
+          <CountryDot id={country.id} size={10} />
           {country.displayName}
         </span>
       </header>
-      <h3 className="pixel text-sm md:text-base text-[var(--tide-foam)] leading-snug">
-        {brief.headline}
-      </h3>
-      <p className="mt-3 text-[var(--tide-foam)] leading-relaxed">
-        {brief.body}
-      </p>
+
+      <h3 className="display text-xl">{brief.headline}</h3>
+
+      <p className="mt-3 text-[color:var(--ink)]">{brief.body}</p>
+
       {brief.whyItMatters ? (
-        <p className="mt-3 text-sm text-[var(--tide-sun)]">
-          <span className="pixel text-[10px] mr-2">WHY IT MATTERS</span>
-          {brief.whyItMatters}
-        </p>
+        <div className="mt-4 card card--sun !p-3 !shadow-none">
+          <p className="eyebrow !text-[color:var(--ink)] mb-1">
+            Why it matters
+          </p>
+          <p className="text-[color:var(--ink)] text-sm">
+            {brief.whyItMatters}
+          </p>
+        </div>
       ) : null}
+
       {brief.vocab.length > 0 ? <VocabBox terms={brief.vocab} /> : null}
+
       {target ? (
-        <footer className="mt-4 text-xs">
+        <footer className="mt-4 text-sm">
           <Link
             href={target.ledgerHref}
-            className="underline decoration-dotted text-[var(--tide-foam)]/80 hover:text-[var(--tide-foam)]"
+            className="font-semibold text-[color:var(--coral)] underline decoration-2 underline-offset-4"
           >
-            check the source record &rarr; {target.title}
+            See the source &rarr; {target.title}
           </Link>
         </footer>
       ) : null}

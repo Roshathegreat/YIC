@@ -16,17 +16,13 @@ export function VocabBox({ terms }: { terms: string[] }) {
     .filter(([, g]) => Boolean(g));
   if (entries.length === 0) return null;
   return (
-    <aside className="mt-4 p-3 border-2 border-[var(--tide-foam)] bg-[var(--tide-deep)] rounded-sm">
-      <p className="pixel text-xs mb-2 text-[var(--tide-sun)]">
-        Wooby's word box
-      </p>
+    <aside className="mt-4 card card--sand !p-3 !shadow-none">
+      <p className="eyebrow mb-2">Word box</p>
       <dl className="space-y-1.5 text-sm">
         {entries.map(([term, gloss]) => (
           <div key={term}>
-            <dt className="inline font-semibold text-[var(--tide-kelp)]">
-              {term}
-            </dt>
-            <dd className="inline text-[var(--tide-foam)]"> — {gloss}</dd>
+            <dt className="inline font-bold">{term}</dt>
+            <dd className="inline"> — {gloss}</dd>
           </div>
         ))}
       </dl>
