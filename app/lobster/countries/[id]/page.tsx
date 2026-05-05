@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { COUNTRY_IDS, getCountry, type CountryId } from "@/lib/db";
 import { BriefCard } from "@/components/lobster/BriefCard";
+import { CountryDot } from "@/components/lobster/CountryMark";
 import { WOOBY_VOICE } from "@/lib/lobster-voice";
 
 export function generateStaticParams() {
@@ -18,49 +19,39 @@ export default async function LobsterCountryPage({
   const country = getCountry(id as CountryId);
 
   return (
-    <main className="tide-surface min-h-screen">
-      <div className="max-w-3xl mx-auto px-6 py-8">
-        <nav className="mb-4 text-sm">
+    <main className="surface-paper--kid">
+      <div className="max-w-3xl mx-auto px-6 py-10">
+        <nav className="mb-6 text-sm">
           <Link
             href="/lobster"
-            className="underline decoration-dotted text-[var(--tide-foam)]/80"
+            className="font-semibold text-[color:var(--coral)] underline decoration-2 underline-offset-4"
           >
-            &larr; back to {WOOBY_VOICE.name}'s Tide Report
+            &larr; Back to {WOOBY_VOICE.name}&apos;s Tide Report
           </Link>
         </nav>
 
-        <header className="mb-6">
-          <p className="pixel text-xs text-[var(--tide-sun)]">
-            {country.displayName.toUpperCase()} DESK
-          </p>
-          <div className="flex items-center gap-3 mt-1">
-            <span className="text-5xl" aria-hidden>
-              {country.marineAnimal.emoji}
-            </span>
-            <h1 className="pixel text-2xl text-[var(--tide-foam)]">
-              {country.displayName}
-            </h1>
+        <header className="mb-8">
+          <div className="flex items-center gap-3">
+            <CountryDot id={country.id} size={20} />
+            <p className="eyebrow">Country desk</p>
           </div>
-          <p className="text-xs text-[var(--tide-foam)]/70 mt-2">
+          <h1 className="display text-4xl md:text-5xl mt-2">
+            {country.displayName}
+          </h1>
+          <p className="text-[color:var(--muted)] mt-2">
             Country representative: {country.marineAnimal.species}
           </p>
         </header>
 
-        <section className="mb-8 pixel-card pixel-card--kelp p-4">
-          <p className="pixel text-xs text-[var(--tide-sun)] mb-2">
-            ◆ FROM ISE'S NOTEBOOK ◆
-          </p>
-          <p className="text-[var(--tide-foam)] leading-relaxed">
-            {country.marineAnimal.lobsterRelationship}
-          </p>
+        <section className="mb-8 card card--teal">
+          <p className="eyebrow">From Ise&apos;s notebook</p>
+          <p className="mt-2 text-lg">{country.marineAnimal.lobsterRelationship}</p>
         </section>
 
         <section className="space-y-5">
-          <h2 className="pixel text-sm text-[var(--tide-sun)]">
-            ◆ {WOOBY_VOICE.name.toUpperCase()}'S BRIEFS ◆
-          </h2>
+          <h2 className="display text-2xl">Wooby&apos;s briefs</h2>
           {country.lobsterBriefs.length === 0 ? (
-            <p className="text-[var(--tide-foam)]/70 text-sm">
+            <p className="text-[color:var(--muted)]">
               No briefs yet. Wooby is still reading the file.
             </p>
           ) : (
@@ -72,15 +63,14 @@ export default async function LobsterCountryPage({
           )}
         </section>
 
-        <footer className="mt-10 text-xs text-[var(--tide-foam)]/70">
-          Want the grown-up version with all the legal details? Visit the{" "}
+        <footer className="mt-10 text-sm text-[color:var(--muted)]">
+          Want the grown-up version with all the legal details?{" "}
           <Link
             href={`/countries/${country.id}`}
-            className="underline decoration-dotted"
+            className="font-semibold text-[color:var(--coral)] underline decoration-2 underline-offset-4"
           >
-            {country.displayName} Ledger page
+            Visit the {country.displayName} Ledger page &rarr;
           </Link>
-          .
         </footer>
       </div>
     </main>

@@ -1,130 +1,195 @@
 @import "tailwindcss";
 
-/* Two surfaces, two moods.
-   Ledger  = parchment + ink, calm research feel.
-   Lobster = retro tide-pool palette, pixel headlines, friendly. */
+/* ================================================================
+   YIC palette — kid-accessible, fun, calm.
+   All foreground/background pairings hit WCAG AA on body text.
+
+   Neutral set                Roles
+   --paper   #fff8ee          warm cream — kid + ledger background
+   --ink     #0e2a3a           deep navy — primary text
+   --muted   #5a6b78           cool gray — secondary text
+
+   Accent set
+   --coral   #f15a47           coral — highlight, CTAs, links
+   --teal    #138a7e           ocean — country/policy accent
+   --sun     #f5c24a           sun — callouts, highlights
+   --kelp    #2f7a3f           leaf green — tagging
+   --sand    #fde4c7           soft sand — card surface
+
+   Country accents (used as dots, not full backgrounds)
+   --jp      #d23a3a
+   --us      #2754c5
+   --tw      #198754
+================================================================ */
 
 :root {
-  --ledger-bg: #f7f1e3;
-  --ledger-ink: #1f1b16;
-  --ledger-rule: #d6c9a8;
-  --ledger-accent: #1b4332;
+  --paper: #fff8ee;
+  --ink:   #0e2a3a;
+  --muted: #5a6b78;
 
-  --tide-bg: #0b1d2a;
-  --tide-deep: #07131c;
-  --tide-foam: #e8f1f5;
-  --tide-coral: #ff9f6a;
-  --tide-kelp: #6ee7b7;
-  --tide-sun: #fde68a;
+  --coral: #f15a47;
+  --teal:  #138a7e;
+  --sun:   #f5c24a;
+  --kelp:  #2f7a3f;
+  --sand:  #fde4c7;
+
+  --jp: #d23a3a;
+  --us: #2754c5;
+  --tw: #198754;
+
+  --rule: #e7d9be;
 }
 
-html,
-body {
-  background: var(--ledger-bg);
-  color: var(--ledger-ink);
-  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif;
+html, body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: ui-rounded, "SF Pro Rounded", "Quicksand", "Nunito",
+    system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   -webkit-font-smoothing: antialiased;
+  font-size: 17px;
+  line-height: 1.55;
 }
 
-a {
-  color: inherit;
+a { color: inherit; }
+
+/* ----- Display headings ------------------------------------------------ */
+.display {
+  font-family: ui-rounded, "SF Pro Rounded", "Quicksand", "Nunito",
+    system-ui, sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  line-height: 1.1;
 }
 
-/* --- Ledger surface helpers --- */
-.ledger-surface {
-  background:
-    repeating-linear-gradient(
-      0deg,
-      transparent 0 27px,
-      rgba(31, 27, 22, 0.04) 27px 28px
-    ),
-    var(--ledger-bg);
-}
-
-.ledger-rule {
-  border-color: var(--ledger-rule);
-}
-
-/* --- Lobster (Tide Report) surface --- */
-.tide-surface {
-  background:
-    radial-gradient(circle at 20% 0%, rgba(110, 231, 183, 0.08), transparent 40%),
-    radial-gradient(circle at 80% 100%, rgba(255, 159, 106, 0.08), transparent 40%),
-    var(--tide-bg);
-  color: var(--tide-foam);
-}
-
-/* Pixel display font fallback. Uses system mono so the build stays
-   self-contained — no external font fetch. */
-.pixel {
-  font-family: "Press Start 2P", "VT323", ui-monospace, "Cascadia Mono",
-    "Menlo", monospace;
-  letter-spacing: 0.02em;
+.eyebrow {
   font-weight: 700;
   text-transform: uppercase;
-  image-rendering: pixelated;
+  letter-spacing: 0.12em;
+  font-size: 12px;
+  color: var(--muted);
 }
 
-/* Chunky pixel-style border for cards on the kid surface. */
-.pixel-card {
-  background: var(--tide-deep);
-  border: 2px solid var(--tide-foam);
-  box-shadow:
-    4px 4px 0 0 var(--tide-coral),
-    8px 8px 0 0 rgba(0, 0, 0, 0.35);
-  border-radius: 2px;
+/* ----- Surfaces -------------------------------------------------------- */
+/* Both surfaces share the same warm paper for visual consistency.
+   The ledger feels formal via rule lines; the kid surface feels playful
+   via card color, not via a totally different background. */
+.surface-paper {
+  background:
+    radial-gradient(1200px 600px at 100% -10%, #ffe7c8 0%, transparent 60%),
+    var(--paper);
+  min-height: 100vh;
 }
 
-.pixel-card--kelp {
-  box-shadow:
-    4px 4px 0 0 var(--tide-kelp),
-    8px 8px 0 0 rgba(0, 0, 0, 0.35);
+.surface-paper--kid {
+  background:
+    radial-gradient(900px 500px at -10% 0%, #ffe1d4 0%, transparent 55%),
+    radial-gradient(900px 500px at 110% 100%, #d8f0ec 0%, transparent 55%),
+    var(--paper);
+  min-height: 100vh;
 }
 
-.pixel-card--sun {
-  box-shadow:
-    4px 4px 0 0 var(--tide-sun),
-    8px 8px 0 0 rgba(0, 0, 0, 0.35);
+/* ----- Cards ---------------------------------------------------------- */
+.card {
+  background: #ffffff;
+  border: 2px solid var(--ink);
+  border-radius: 14px;
+  padding: 1.25rem;
+  box-shadow: 0 4px 0 0 rgba(14, 42, 58, 0.08);
 }
 
-/* Tag chip used by Wooby briefs to label the source record. */
-.tide-chip {
+.card--sand    { background: var(--sand); }
+.card--teal    { background: var(--teal);  color: #ffffff; border-color: var(--ink); }
+.card--coral   { background: var(--coral); color: #ffffff; border-color: var(--ink); }
+.card--sun     { background: var(--sun);   color: var(--ink); border-color: var(--ink); }
+.card--paper   { background: #ffffff; }
+
+/* Inverted text helpers for darker cards */
+.card--teal a, .card--coral a { color: #ffffff; }
+.card--teal .eyebrow, .card--coral .eyebrow { color: rgba(255,255,255,0.85); }
+
+/* ----- Pills, dots, chips --------------------------------------------- */
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1.5px solid currentColor;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 999px;
+  border: 2px solid var(--ink);
+  background: var(--coral);
+}
+.dot--jp { background: var(--jp); }
+.dot--us { background: var(--us); }
+.dot--tw { background: var(--tw); }
+
+/* Tag used for ref types on briefs (keeps it small, not shouty) */
+.tag {
   display: inline-block;
   padding: 2px 8px;
-  border: 1px solid var(--tide-foam);
-  border-radius: 999px;
+  border-radius: 6px;
+  background: var(--sand);
+  color: var(--ink);
+  border: 1.5px solid var(--ink);
+  font-weight: 700;
   font-size: 11px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
+.tag--teal  { background: var(--teal);  color: #ffffff; }
+.tag--coral { background: var(--coral); color: #ffffff; }
+.tag--sun   { background: var(--sun);   color: var(--ink); }
 
-/* Vocab gloss: tiny dotted underline + pop tooltip on hover. */
+/* ----- Vocab tooltip --------------------------------------------------- */
 .vocab {
-  border-bottom: 1px dotted currentColor;
+  border-bottom: 2px dotted var(--coral);
   cursor: help;
+  text-decoration: none;
 }
 
-/* Marquee headline strip for the news page. */
-.tide-marquee {
+/* ----- Marquee (less shouty than before) ------------------------------ */
+.marquee {
   white-space: nowrap;
   overflow: hidden;
-  border-top: 2px solid var(--tide-foam);
-  border-bottom: 2px solid var(--tide-foam);
-  padding: 6px 0;
-  background: var(--tide-deep);
+  border-top: 2px solid var(--ink);
+  border-bottom: 2px solid var(--ink);
+  background: var(--sun);
+  color: var(--ink);
+  padding: 8px 0;
 }
-.tide-marquee__track {
+.marquee__track {
   display: inline-block;
   padding-left: 100%;
-  animation: tide-marquee 28s linear infinite;
+  animation: marquee 36s linear infinite;
+  font-weight: 700;
+  letter-spacing: 0.04em;
 }
-@keyframes tide-marquee {
+@keyframes marquee {
   from { transform: translateX(0); }
   to   { transform: translateX(-100%); }
 }
 
+/* Ledger rule helper */
+.rule { border-color: var(--rule); }
+
 /* Reduce-motion respect. */
 @media (prefers-reduced-motion: reduce) {
-  .tide-marquee__track { animation: none; padding-left: 0; }
+  .marquee__track { animation: none; padding-left: 0; }
+}
+
+/* Focus ring — important for kids navigating with keyboard. */
+:focus-visible {
+  outline: 3px solid var(--coral);
+  outline-offset: 2px;
+  border-radius: 6px;
 }

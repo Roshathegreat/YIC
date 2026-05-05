@@ -18,26 +18,19 @@ export function RecordCard({
   lastUpdated,
 }: RecordCardProps) {
   return (
-    <article
-      id={id}
-      className="ledger-rule border rounded-md p-4 bg-white scroll-mt-20"
-    >
+    <article id={id} className="card scroll-mt-24">
       <header className="flex items-start justify-between gap-3">
         <div>
-          <h3 className="text-base font-semibold text-gray-900">{title}</h3>
+          <h3 className="display text-lg">{title}</h3>
           {subtitle ? (
-            <p className="text-sm text-gray-600">{subtitle}</p>
+            <p className="text-sm text-[color:var(--muted)]">{subtitle}</p>
           ) : null}
         </div>
-        {badge ? (
-          <span className="text-xs uppercase tracking-wide text-gray-500 ledger-rule border rounded px-2 py-0.5">
-            {badge}
-          </span>
-        ) : null}
+        {badge ? <span className="tag">{badge}</span> : null}
       </header>
-      <div className="mt-3 text-sm text-gray-800">{children}</div>
+      <div className="mt-3 text-sm">{children}</div>
       {lastUpdated ? (
-        <footer className="mt-3 text-xs text-gray-400">
+        <footer className="mt-3 text-xs text-[color:var(--muted)]">
           Last updated {lastUpdated}
         </footer>
       ) : null}
