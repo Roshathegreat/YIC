@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { COUNTRY_IDS, getCountry, type CountryId } from "@/lib/db";
-import { LOBSTER_VOICE } from "@/lib/lobster-voice";
+import { BriefCard } from "@/components/lobster/BriefCard";
+import { WOOBY_VOICE } from "@/lib/lobster-voice";
 
 export function generateStaticParams() {
   return COUNTRY_IDS.map((id) => ({ id }));
@@ -17,46 +18,70 @@ export default async function LobsterCountryPage({
   const country = getCountry(id as CountryId);
 
   return (
-    <main className="min-h-screen bg-slate-900 text-slate-100">
-      <div className="max-w-3xl mx-auto px-6 py-10">
-        <nav className="mb-6 text-sm">
-          <Link href="/lobster" className="underline text-slate-300">
-            &larr; {LOBSTER_VOICE.name}'s World
+    <main className="tide-surface min-h-screen">
+      <div className="max-w-3xl mx-auto px-6 py-8">
+        <nav className="mb-4 text-sm">
+          <Link
+            href="/lobster"
+            className="underline decoration-dotted text-[var(--tide-foam)]/80"
+          >
+            &larr; back to {WOOBY_VOICE.name}'s Tide Report
           </Link>
         </nav>
 
-        <header className="mb-8">
-          <div className="text-6xl">{country.marineAnimal.emoji}</div>
-          <h1 className="mt-3 text-3xl font-semibold">
-            {country.displayName}
-          </h1>
-          <p className="text-sm text-slate-400">
-            {country.marineAnimal.species}
+        <header className="mb-6">
+          <p className="pixel text-xs text-[var(--tide-sun)]">
+            {country.displayName.toUpperCase()} DESK
+          </p>
+          <div className="flex items-center gap-3 mt-1">
+            <span className="text-5xl" aria-hidden>
+              {country.marineAnimal.emoji}
+            </span>
+            <h1 className="pixel text-2xl text-[var(--tide-foam)]">
+              {country.displayName}
+            </h1>
+          </div>
+          <p className="text-xs text-[var(--tide-foam)]/70 mt-2">
+            Country representative: {country.marineAnimal.species}
           </p>
         </header>
 
-        <section className="space-y-4 text-slate-200">
-          <p className="italic text-slate-400">
-            {LOBSTER_VOICE.name} says:
+        <section className="mb-8 pixel-card pixel-card--kelp p-4">
+          <p className="pixel text-xs text-[var(--tide-sun)] mb-2">
+            ◆ FROM ISE'S NOTEBOOK ◆
           </p>
-          <p className="text-lg leading-relaxed">
+          <p className="text-[var(--tide-foam)] leading-relaxed">
             {country.marineAnimal.lobsterRelationship}
           </p>
-          <div className="mt-6 p-4 border border-dashed border-slate-700 rounded text-sm text-slate-400">
-            <p>
-              The translated story of {country.displayName}'s plastic situation
-              will appear here once the translation layer comes online (week
-              2). For now, the verified facts live on the{" "}
-              <Link
-                href={`/countries/${country.id}`}
-                className="underline text-slate-200"
-              >
-                Ledger page for {country.displayName}
-              </Link>
-              .
-            </p>
-          </div>
         </section>
+
+        <section className="space-y-5">
+          <h2 className="pixel text-sm text-[var(--tide-sun)]">
+            ◆ {WOOBY_VOICE.name.toUpperCase()}'S BRIEFS ◆
+          </h2>
+          {country.lobsterBriefs.length === 0 ? (
+            <p className="text-[var(--tide-foam)]/70 text-sm">
+              No briefs yet. Wooby is still reading the file.
+            </p>
+          ) : (
+            country.lobsterBriefs.map((b) => (
+              <div key={b.id} id={b.id} className="scroll-mt-20">
+                <BriefCard country={country} brief={b} />
+              </div>
+            ))
+          )}
+        </section>
+
+        <footer className="mt-10 text-xs text-[var(--tide-foam)]/70">
+          Want the grown-up version with all the legal details? Visit the{" "}
+          <Link
+            href={`/countries/${country.id}`}
+            className="underline decoration-dotted"
+          >
+            {country.displayName} Ledger page
+          </Link>
+          .
+        </footer>
       </div>
     </main>
   );

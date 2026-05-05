@@ -132,5 +132,49 @@
       "lastUpdated": "2026-05-03"
     }
   ],
-  "newsFeed": []
+  "newsFeed": [],
+  "lobsterBriefs": [
+    {
+      "id": "twn-brief-treaty",
+      "refType": "treaty",
+      "refId": "treaty",
+      "headline": "Taiwan watches the treaty from outside the room",
+      "body": "Taiwan isn't a UN member, so it doesn't get a seat at the plastic treaty table. But Taiwan's environment ministry says it will follow the treaty's rules anyway, once those rules are decided.",
+      "whyItMatters": "Treaties don't only matter for the countries inside the room. They set the new normal for everyone.",
+      "vocab": ["treaty", "INC-5.2"]
+    },
+    {
+      "id": "twn-brief-roadmap",
+      "refType": "policy",
+      "refId": "twn-single-use-plastics-roadmap",
+      "headline": "Taiwan's plan to phase out four plastics",
+      "body": "Taiwan has a roadmap to slowly get rid of four single-use plastic things — bags, straws, forks/spoons, and drink cups — first in schools and offices, then in shops, then everywhere. The end goal: a full ban.",
+      "vocab": ["single-use", "policy"]
+    },
+    {
+      "id": "twn-brief-bag",
+      "refType": "policy",
+      "refId": "twn-plastic-bag-restriction",
+      "headline": "More shops, fewer free plastic bags",
+      "body": "In 2018 Taiwan added seven more kinds of shops — like bakeries and pharmacies — to the list of stores that can't hand out free plastic bags. If you want one, you pay.",
+      "vocab": ["single-use"]
+    },
+    {
+      "id": "twn-brief-uni",
+      "refType": "company",
+      "refId": "twn-uni-president",
+      "headline": "Uni-President: lighter bottles, more recycled PET",
+      "body": "Uni-President is one of Taiwan's biggest food and drink companies. They say they're using more recycled PET (that's old plastic melted down for new bottles) and making each bottle a tiny bit lighter.",
+      "vocab": ["recycling"]
+    },
+    {
+      "id": "twn-brief-formosa",
+      "refType": "company",
+      "refId": "twn-formosa-plastics",
+      "headline": "Formosa Plastics: the giant that makes the plastic",
+      "body": "Formosa Plastics is one of the biggest companies in the world that actually makes brand-new plastic from oil. They publish reports about going greener — but environmental groups say those promises don't yet include making less plastic in the first place.",
+      "whyItMatters": "If a company makes plastic for a living, asking them to make less plastic is asking them to change their whole business. That's why the treaty fight is so hard.",
+      "vocab": ["primary plastic", "production cap"]
+    }
+  ]
 }

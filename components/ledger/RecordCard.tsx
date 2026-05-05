@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 
 interface RecordCardProps {
+  id?: string;
   title: string;
   subtitle?: string;
   badge?: string;
@@ -9,6 +10,7 @@ interface RecordCardProps {
 }
 
 export function RecordCard({
+  id,
   title,
   subtitle,
   badge,
@@ -16,7 +18,10 @@ export function RecordCard({
   lastUpdated,
 }: RecordCardProps) {
   return (
-    <article className="border border-gray-200 rounded-md p-4 bg-white">
+    <article
+      id={id}
+      className="ledger-rule border rounded-md p-4 bg-white scroll-mt-20"
+    >
       <header className="flex items-start justify-between gap-3">
         <div>
           <h3 className="text-base font-semibold text-gray-900">{title}</h3>
@@ -25,7 +30,7 @@ export function RecordCard({
           ) : null}
         </div>
         {badge ? (
-          <span className="text-xs uppercase tracking-wide text-gray-500 border border-gray-200 rounded px-2 py-0.5">
+          <span className="text-xs uppercase tracking-wide text-gray-500 ledger-rule border rounded px-2 py-0.5">
             {badge}
           </span>
         ) : null}

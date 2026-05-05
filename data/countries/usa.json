@@ -135,5 +135,49 @@
       "lastUpdated": "2026-05-03"
     }
   ],
-  "newsFeed": []
+  "newsFeed": [],
+  "lobsterBriefs": [
+    {
+      "id": "usa-brief-treaty",
+      "refType": "treaty",
+      "refId": "treaty",
+      "headline": "USA: yes to a treaty, no to a hard cap",
+      "body": "The United States agrees a global plastic treaty is a good idea. But like Japan, it does not want to put a top limit on how much new plastic gets made. It says each country should pick its own way to clean up.",
+      "whyItMatters": "The US makes and uses a huge amount of plastic. So what the US decides changes how big the whole treaty can be.",
+      "vocab": ["treaty", "production cap", "high ambition coalition"]
+    },
+    {
+      "id": "usa-brief-sos2",
+      "refType": "policy",
+      "refId": "usa-save-our-seas-2.0",
+      "headline": "Save Our Seas 2.0 — a US law about ocean trash",
+      "body": "In 2020 the US passed a law called Save Our Seas 2.0. It puts money into cleaning marine debris (that's trash in the ocean), better recycling at home, and helping other countries deal with plastic too.",
+      "vocab": ["marine debris", "recycling"]
+    },
+    {
+      "id": "usa-brief-sb54",
+      "refType": "policy",
+      "refId": "usa-ca-sb54",
+      "headline": "California's big plastic rule: SB 54",
+      "body": "California passed a rule called SB 54. By 2032, every single-use package and plastic fork sold in California has to be recyclable or compostable. And the companies that make the plastic have to help pay for cleanup. That last part is called EPR.",
+      "whyItMatters": "California is huge. When California changes the rules, brands across the whole country usually change too.",
+      "vocab": ["EPR", "single-use", "policy"]
+    },
+    {
+      "id": "usa-brief-coke",
+      "refType": "company",
+      "refId": "usa-coca-cola",
+      "headline": "Coca-Cola's recycled-plastic promise (a moving target)",
+      "body": "Coca-Cola says at least 25% of its bottles will be made from recycled plastic by 2035. That number used to be bigger and got smaller. Wooby is keeping receipts.",
+      "vocab": ["recycling"]
+    },
+    {
+      "id": "usa-brief-pepsi",
+      "refType": "company",
+      "refId": "usa-pepsico",
+      "headline": "PepsiCo: half as much new plastic per drink by 2030",
+      "body": "PepsiCo promises that by 2030, every drink they sell will use about half as much brand-new plastic as it does today. They'll do it by using recycled plastic and lighter packaging.",
+      "vocab": ["primary plastic", "recycling"]
+    }
+  ]
 }
