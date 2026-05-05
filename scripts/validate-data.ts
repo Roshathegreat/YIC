@@ -1,18 +1,12 @@
-import fs from "node:fs";
-import path from "node:path";
-import { CountrySchema } from "../lib/schema";
-
-const DATA_DIR = path.join(process.cwd(), "data", "countries");
-const COUNTRIES = ["japan", "usa", "taiwan"];
+import { COUNTRY_IDS, getCountry } from "../lib/db";
 
 let failed = 0;
-for (const id of COUNTRIES) {
-  const filePath = path.join(DATA_DIR, `${id}.json`);
+for (const id of COUNTRY_IDS) {
   try {
-    const raw = fs.readFileSync(filePath, "utf8");
-    const parsed = JSON.parse(raw);
-    CountrySchema.parse(parsed);
-    console.log(`ok  data/countries/${id}.json`);
+    const c = getCountry(id);
+    console.log(
+      `ok  data/countries/${id}.json  (${c.lobsterBriefs.length} lobster briefs cross-checked)`,
+    );
   } catch (err) {
     failed += 1;
     console.error(`FAIL data/countries/${id}.json`);

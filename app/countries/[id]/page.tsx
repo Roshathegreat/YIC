@@ -18,14 +18,15 @@ export default async function CountryPage({
   const country = getCountry(id as CountryId);
 
   return (
-    <main className="max-w-4xl mx-auto px-6 py-10">
+    <main className="ledger-surface min-h-screen">
+      <div className="max-w-4xl mx-auto px-6 py-10">
       <nav className="mb-6 text-sm">
         <Link href="/" className="underline">
           &larr; Ledger
         </Link>
       </nav>
 
-      <header className="mb-8 border-b border-gray-200 pb-6">
+      <header className="mb-8 border-b ledger-rule pb-6">
         <div
           className="h-1 w-16 rounded mb-3"
           style={{ backgroundColor: country.accentColor }}
@@ -36,6 +37,14 @@ export default async function CountryPage({
         <p className="text-sm text-gray-500 mt-1">
           ISO {country.iso3} · last updated {country.treatyPosition.lastUpdated}
         </p>
+        <p className="text-sm mt-3">
+          <Link
+            href={`/lobster/countries/${country.id}`}
+            className="underline decoration-dotted"
+          >
+            Read the kid-friendly version on Wooby&apos;s Tide Report &rarr;
+          </Link>
+        </p>
       </header>
 
       <section className="mb-10">
@@ -43,6 +52,7 @@ export default async function CountryPage({
           UN Plastic Treaty position
         </h2>
         <RecordCard
+          id="treaty"
           title="Current stance"
           lastUpdated={country.treatyPosition.lastUpdated}
         >
@@ -68,6 +78,7 @@ export default async function CountryPage({
           {country.domesticPolicies.map((p) => (
             <RecordCard
               key={p.id}
+              id={p.id}
               title={p.name}
               subtitle={p.enacted ? `Enacted ${p.enacted}` : undefined}
               badge={p.scope}
@@ -93,6 +104,7 @@ export default async function CountryPage({
           {country.companies.map((c) => (
             <RecordCard
               key={c.id}
+              id={c.id}
               title={c.name}
               subtitle={c.sector}
               lastUpdated={c.lastUpdated}
@@ -145,6 +157,7 @@ export default async function CountryPage({
             Beppu deep node
           </h2>
           <RecordCard
+            id="beppu"
             title="Local context"
             lastUpdated={country.deepNode.lastUpdated}
           >
@@ -189,6 +202,7 @@ export default async function CountryPage({
           </RecordCard>
         </section>
       ) : null}
+      </div>
     </main>
   );
 }

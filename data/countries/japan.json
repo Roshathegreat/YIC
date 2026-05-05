@@ -135,6 +135,59 @@
     }
   ],
   "newsFeed": [],
+  "lobsterBriefs": [
+    {
+      "id": "jpn-brief-treaty",
+      "refType": "treaty",
+      "refId": "treaty",
+      "headline": "Japan: yes to a treaty, no to a hard cap",
+      "body": "Japan says it wants a global plastic treaty — that's a giant promise countries write down and sign. But Japan does not want a strict top limit on how much new plastic factories can make. It wants to focus on cleaning up and recycling instead.",
+      "whyItMatters": "Most plastic pollution starts as brand-new plastic. If we keep making more and more, cleanup alone won't catch up. That's why a 'production cap' is the part everyone is fighting about.",
+      "vocab": ["treaty", "production cap", "primary plastic"]
+    },
+    {
+      "id": "jpn-brief-pact",
+      "refType": "policy",
+      "refId": "jpn-plastic-resource-circulation-act",
+      "headline": "Japan's plastic recycling law (since 2022)",
+      "body": "Japan passed a law in 2022 that asks towns to collect plastic trash separately and asks companies to design things that can actually be recycled. The big idea: stop throwing plastic away after one use.",
+      "vocab": ["recycling", "single-use"]
+    },
+    {
+      "id": "jpn-brief-bag",
+      "refType": "policy",
+      "refId": "jpn-bag-charge-2020",
+      "headline": "You have to pay for plastic bags now",
+      "body": "Since July 2020, every store in Japan has to charge you for a plastic bag. It's a small price — but a lot of people just bring their own bag instead. Plastic bag use dropped fast in the first year.",
+      "whyItMatters": "Tiny rules can change a whole country's habits. This one is a real-world example.",
+      "vocab": ["single-use"]
+    },
+    {
+      "id": "jpn-brief-suntory",
+      "refType": "company",
+      "refId": "jpn-suntory",
+      "headline": "Suntory: all bottles recycled or plant-based by 2030",
+      "body": "Suntory makes a lot of drinks. They promise that by 2030, every PET bottle they sell will be made from recycled plastic or from plants — not brand-new oil plastic. That's the promise. We'll see if they keep it.",
+      "vocab": ["recycling", "primary plastic"]
+    },
+    {
+      "id": "jpn-brief-7i",
+      "refType": "company",
+      "refId": "jpn-sevenandi",
+      "headline": "7-Eleven Japan wants less plastic on its shelves",
+      "body": "Seven & i (the 7-Eleven company in Japan) says it will swap plastic packaging for paper, recycled plastic, or plant-based stuff by 2030.",
+      "vocab": ["recycling"]
+    },
+    {
+      "id": "jpn-brief-beppu",
+      "refType": "beppu",
+      "refId": "beppu",
+      "headline": "Wooby's home: Beppu Bay",
+      "body": "Beppu Bay is where I live. The mountains here are steep, so when it rains hard, water sprints down the rivers and dumps everything — including plastic trash — into the sea in just a few hours. That's called source-to-sea.",
+      "whyItMatters": "If you want to stop ocean plastic, you have to start way upstream — at the river, the street, the bin.",
+      "vocab": ["watershed", "hydrology", "marine debris"]
+    }
+  ],
   "deepNode": {
     "marineDebrisData": "Beppu Bay receives marine debris from rivers draining the Oita prefecture watershed and from drift currents along the Inland Sea. Local beach surveys consistently find single-use plastic packaging, fishing gear fragments, and microplastics. Quantitative figures pending — user to fill from local source.",
     "cleanupOrgs": [

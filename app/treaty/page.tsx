@@ -5,7 +5,8 @@ import { SourceList } from "@/components/ledger/SourceCite";
 export default function TreatyComparePage() {
   const countries = getAllCountries();
   return (
-    <main className="max-w-6xl mx-auto px-6 py-10">
+    <main className="ledger-surface min-h-screen">
+      <div className="max-w-6xl mx-auto px-6 py-10">
       <nav className="mb-6 text-sm">
         <Link href="/" className="underline">
           &larr; Ledger
@@ -54,6 +55,15 @@ export default function TreatyComparePage() {
             </div>
           </section>
         ))}
+      </div>
+      <p className="mt-8 text-sm">
+        <Link
+          href="/lobster/court"
+          className="underline decoration-dotted"
+        >
+          Read the kid-friendly version on Wooby&apos;s Tide Report &rarr;
+        </Link>
+      </p>
       </div>
     </main>
   );

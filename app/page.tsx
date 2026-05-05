@@ -5,7 +5,8 @@ import { getAllCountries } from "@/lib/db";
 export default function LedgerHome() {
   const countries = getAllCountries();
   return (
-    <main className="max-w-5xl mx-auto px-6 py-10">
+    <main className="ledger-surface min-h-screen">
+      <div className="max-w-5xl mx-auto px-6 py-10">
       <header className="mb-8">
         <p className="text-xs uppercase tracking-widest text-gray-500">
           The Ledger
@@ -19,8 +20,9 @@ export default function LedgerHome() {
           source and shows when it was last updated.
         </p>
         <p className="mt-2 text-sm">
-          <Link href="/lobster" className="underline">
-            Or visit the lobster's world &rarr;
+          <Link href="/lobster" className="underline decoration-dotted">
+            Looking for the kid-friendly version? Visit Wooby&apos;s Tide
+            Report &rarr;
           </Link>
         </p>
       </header>
@@ -64,6 +66,7 @@ export default function LedgerHome() {
           Compare treaty positions across all 3 countries &rarr;
         </Link>
       </nav>
+      </div>
     </main>
   );
 }
