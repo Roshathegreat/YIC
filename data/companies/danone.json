@@ -1,0 +1,46 @@
+{
+  "id": "danone",
+  "name": "Danone",
+  "hqCountryId": "france",
+  "sector": "Dairy & water",
+  "logoEmoji": "🥛",
+  "brandColor": "#0a4795",
+  "stats": {
+    "plasticFootprintTonsPerYear": 750000,
+    "brandAuditRank": 9,
+    "recycledContentPct": 30,
+    "commitmentScore": 3.5,
+    "transparencyScore": 4
+  },
+  "commitments": [
+    {
+      "description": "100% recyclable, reusable, or compostable packaging by 2025.",
+      "target": "100%",
+      "year": 2025
+    },
+    {
+      "description": "Reach 50% recycled content in plastic water bottles by 2025.",
+      "target": "50%",
+      "year": 2025
+    }
+  ],
+  "controversies": [
+    {
+      "description": "Evian water bottles are mainly single-use plastic; reuse rate remains low globally.",
+      "year": 2023
+    }
+  ],
+  "wooby": {
+    "headline": "Danone has the most recycled plastic in its water bottles.",
+    "narrative": "Danone makes Evian and Volvic water and lots of yogurt. Their Evian bottles are made with the most recycled plastic of any big water brand. Wooby still wishes more people drank tap water.",
+    "iconEmoji": "🌊"
+  },
+  "sources": [
+    {
+      "url": "https://www.danone.com/impact/planet/packaging-positive-circular-economy.html",
+      "publisher": "Danone",
+      "accessedDate": "2026-05-07"
+    }
+  ],
+  "lastUpdated": "2026-05-07"
+}

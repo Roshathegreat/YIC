@@ -1,0 +1,57 @@
+{
+  "id": "thailand",
+  "displayName": "Thailand",
+  "iso3": "THA",
+  "m49": 764,
+  "region": "asia",
+  "accentColor": "#a51931",
+  "stats": {
+    "population": 71700000,
+    "plasticWastePerCapitaKg": 30.6,
+    "mismanagedWasteTonsPerYear": 1100000,
+    "recyclingRatePct": 25,
+    "oceanLeakageEstimateTonsPerYear": 230000,
+    "treatyStance": "high-ambition"
+  },
+  "policies": [
+    {
+      "id": "plastic-roadmap-2018-2030",
+      "name": "Plastic Waste Management Roadmap 2018–2030",
+      "enacted": "2019-04-17",
+      "summary": "Bans plastic microbeads, oxo-degradable plastics, and (since 2022) thin plastic bags in major retailers.",
+      "scope": "national",
+      "sources": [
+        {
+          "url": "https://www.pcd.go.th/eng/",
+          "publisher": "Pollution Control Department, Thailand",
+          "accessedDate": "2026-05-07"
+        }
+      ],
+      "lastUpdated": "2026-05-07"
+    }
+  ],
+  "companyIds": ["coca-cola", "pepsico", "nestle"],
+  "newsFeed": [
+    {
+      "id": "bangkokpost-2025-tourist-beach",
+      "headline": "Phuket trials deposit-return scheme on tourist beaches",
+      "url": "https://www.bangkokpost.com/",
+      "publisher": "Bangkok Post",
+      "publishedDate": "2025-12-01",
+      "summary": "A pilot program pays beachgoers small refunds for returning empty plastic bottles, recovering 8 tonnes in its first month."
+    }
+  ],
+  "wooby": {
+    "headline": "Thailand's tourist beaches are testing pay-to-return-it bottles.",
+    "narrative": "Wooby has heard about a fun idea in Thailand: tourists get a small coin back for every bottle they return. Wooby thinks more places should try this!",
+    "iconEmoji": "🐘"
+  },
+  "sources": [
+    {
+      "url": "https://www.unep.org/topics/chemicals-and-pollution-action/plastic-pollution",
+      "publisher": "UN Environment Programme",
+      "accessedDate": "2026-05-07"
+    }
+  ],
+  "lastUpdated": "2026-05-07"
+}

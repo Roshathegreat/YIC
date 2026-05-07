@@ -1,0 +1,51 @@
+{
+  "id": "mondelez",
+  "name": "Mondelez International",
+  "hqCountryId": "usa",
+  "sector": "Snacks",
+  "logoEmoji": "🍪",
+  "brandColor": "#7c2cae",
+  "stats": {
+    "plasticFootprintTonsPerYear": 200000,
+    "brandAuditRank": 5,
+    "recycledContentPct": 5,
+    "commitmentScore": 2,
+    "transparencyScore": 2.5
+  },
+  "commitments": [
+    {
+      "description": "Make 100% of packaging recyclable by 2025 and design for recyclability.",
+      "target": "100%",
+      "year": 2025
+    },
+    {
+      "description": "Reach 5% recycled content in plastic packaging by 2025.",
+      "target": "5%",
+      "year": 2025
+    }
+  ],
+  "controversies": [
+    {
+      "description": "Brands Cadbury and Oreo flagged in beach-cleanup audits across Europe and South Asia.",
+      "year": 2024
+    }
+  ],
+  "wooby": {
+    "headline": "Mondelez makes Oreos and Cadbury — and a lot of crinkly wrappers.",
+    "narrative": "Mondelez makes Oreos, Cadbury chocolate, Toblerone, and many other snacks. The shiny crinkly wrappers are very hard to recycle. Wooby would love a future where snack wrappers can be recycled or composted.",
+    "iconEmoji": "🌊"
+  },
+  "sources": [
+    {
+      "url": "https://www.mondelezinternational.com/snacking-made-right/",
+      "publisher": "Mondelez International",
+      "accessedDate": "2026-05-07"
+    },
+    {
+      "url": "https://www.brandaudit.breakfreefromplastic.org/",
+      "publisher": "Break Free From Plastic",
+      "accessedDate": "2026-05-07"
+    }
+  ],
+  "lastUpdated": "2026-05-07"
+}

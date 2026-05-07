@@ -1,0 +1,66 @@
+{
+  "id": "coca-cola",
+  "name": "The Coca-Cola Company",
+  "hqCountryId": "usa",
+  "sector": "Beverages",
+  "logoEmoji": "🥤",
+  "brandColor": "#f40009",
+  "stats": {
+    "plasticFootprintTonsPerYear": 3000000,
+    "brandAuditRank": 1,
+    "recycledContentPct": 23,
+    "commitmentScore": 2.5,
+    "transparencyScore": 3
+  },
+  "commitments": [
+    {
+      "description": "World Without Waste: collect and recycle a bottle or can for every one sold by 2030.",
+      "year": 2030
+    },
+    {
+      "description": "Use 50% recycled material in primary packaging by 2030.",
+      "target": "50%",
+      "year": 2030
+    },
+    {
+      "description": "Reusable packaging to reach 25% of total servings by 2030.",
+      "target": "25%",
+      "year": 2030
+    }
+  ],
+  "controversies": [
+    {
+      "description": "Ranked #1 plastic polluter in Break Free From Plastic global brand audits every year 2018–2023.",
+      "year": 2023
+    },
+    {
+      "description": "Withdrew from a key 2025 reusable-packaging target in 2024, citing market conditions.",
+      "year": 2024
+    }
+  ],
+  "wooby": {
+    "headline": "The biggest brand on every beach Wooby visits.",
+    "narrative": "Wooby finds Coca-Cola bottles on more beaches than any other brand. Coca-Cola has promised to use more recycled plastic, but it walked back its reusable-bottle goal. Wooby is waiting to see real progress.",
+    "iconEmoji": "🌊"
+  },
+  "sources": [
+    {
+      "url": "https://www.coca-colacompany.com/sustainability/packaging-sustainability",
+      "publisher": "The Coca-Cola Company",
+      "accessedDate": "2026-05-07"
+    },
+    {
+      "url": "https://www.brandaudit.breakfreefromplastic.org/",
+      "publisher": "Break Free From Plastic",
+      "accessedDate": "2026-05-07"
+    },
+    {
+      "url": "https://emf.thirdlight.com/file/24/cn3KtphcnBpsAa-cnH7cnELDBs/Global%20Commitment%202024%20Progress%20Report.pdf",
+      "publisher": "Ellen MacArthur Foundation Global Commitment",
+      "accessedDate": "2026-05-07",
+      "verified": false,
+      "note": "Verify the latest signatory progress report."
+    }
+  ],
+  "lastUpdated": "2026-05-07"
+}

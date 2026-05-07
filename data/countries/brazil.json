@@ -1,0 +1,58 @@
+{
+  "id": "brazil",
+  "displayName": "Brazil",
+  "iso3": "BRA",
+  "m49": 76,
+  "region": "south-america",
+  "accentColor": "#009b3a",
+  "stats": {
+    "population": 217600000,
+    "plasticWastePerCapitaKg": 51.0,
+    "mismanagedWasteTonsPerYear": 3300000,
+    "recyclingRatePct": 4,
+    "oceanLeakageEstimateTonsPerYear": 360000,
+    "treatyStance": "high-ambition"
+  },
+  "policies": [
+    {
+      "id": "national-solid-waste-policy",
+      "name": "National Solid Waste Policy (Law 12.305/2010)",
+      "enacted": "2010-08-02",
+      "summary": "Establishes shared producer responsibility, reverse-logistics for packaging, and a target to end open dumping.",
+      "scope": "national",
+      "sources": [
+        {
+          "url": "https://www.gov.br/mma/pt-br",
+          "publisher": "Ministério do Meio Ambiente, Brasil",
+          "accessedDate": "2026-05-07"
+        }
+      ],
+      "lastUpdated": "2026-05-07"
+    }
+  ],
+  "companyIds": ["coca-cola", "pepsico", "unilever", "nestle"],
+  "newsFeed": [
+    {
+      "id": "folha-2025-amazon-rivers",
+      "headline": "Amazon tributaries carry plastic deep into the rainforest, study finds",
+      "url": "https://www1.folha.uol.com.br/",
+      "publisher": "Folha de S.Paulo",
+      "publishedDate": "2025-06-11",
+      "summary": "Researchers tracked plastic debris hundreds of kilometres up Amazon tributaries, much of it traceable to upstream cities."
+    }
+  ],
+  "wooby": {
+    "headline": "Brazil recycles only a tiny fraction — but recyclers do amazing work.",
+    "narrative": "Wooby has dolphin friends in Brazil who say the Amazon is full of plastic from cities far away. Brazil has hundreds of thousands of catadores — recyclers who collect plastic on the streets. They are heroes for the rivers and for Wooby.",
+    "iconEmoji": "🦜"
+  },
+  "sources": [
+    {
+      "url": "https://ourworldindata.org/plastic-pollution",
+      "publisher": "Our World in Data",
+      "accessedDate": "2026-05-07",
+      "verified": false
+    }
+  ],
+  "lastUpdated": "2026-05-07"
+}

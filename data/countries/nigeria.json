@@ -1,0 +1,58 @@
+{
+  "id": "nigeria",
+  "displayName": "Nigeria",
+  "iso3": "NGA",
+  "m49": 566,
+  "region": "africa",
+  "accentColor": "#008751",
+  "stats": {
+    "population": 223800000,
+    "plasticWastePerCapitaKg": 13.5,
+    "mismanagedWasteTonsPerYear": 2500000,
+    "recyclingRatePct": 12,
+    "oceanLeakageEstimateTonsPerYear": 200000,
+    "treatyStance": "high-ambition"
+  },
+  "policies": [
+    {
+      "id": "national-policy-plastic-waste-2020",
+      "name": "National Policy on Plastic Waste Management",
+      "enacted": "2020-12-01",
+      "summary": "Sets out producer responsibility, an eventual ban on single-use plastic bags in federal facilities, and targets for plastic recycling capacity.",
+      "scope": "national",
+      "sources": [
+        {
+          "url": "https://environment.gov.ng/",
+          "publisher": "Federal Ministry of Environment, Nigeria",
+          "accessedDate": "2026-05-07",
+          "verified": false
+        }
+      ],
+      "lastUpdated": "2026-05-07"
+    }
+  ],
+  "companyIds": ["coca-cola", "pepsico", "nestle"],
+  "newsFeed": [
+    {
+      "id": "premiumtimes-2025-lagos-ban",
+      "headline": "Lagos State enforces ban on single-use plastics and styrofoam packaging",
+      "url": "https://www.premiumtimesng.com/",
+      "publisher": "Premium Times Nigeria",
+      "publishedDate": "2025-01-22",
+      "summary": "Africa's largest city began enforcing a ban on styrofoam takeaway containers, citing flooding caused by clogged drains."
+    }
+  ],
+  "wooby": {
+    "headline": "Lagos banned styrofoam to stop floods caused by clogged drains.",
+    "narrative": "Wooby learned a sad fact: when plastic clogs drains, cities flood. Lagos in Nigeria banned styrofoam takeaway boxes after a bad flood. Wooby thinks the link between plastic and flooding is something every kid should know.",
+    "iconEmoji": "🌍"
+  },
+  "sources": [
+    {
+      "url": "https://environment.gov.ng/",
+      "publisher": "Federal Ministry of Environment, Nigeria",
+      "accessedDate": "2026-05-07"
+    }
+  ],
+  "lastUpdated": "2026-05-07"
+}

@@ -1,0 +1,60 @@
+{
+  "id": "china",
+  "displayName": "China",
+  "iso3": "CHN",
+  "m49": 156,
+  "region": "asia",
+  "accentColor": "#de2910",
+  "stats": {
+    "population": 1410000000,
+    "plasticWastePerCapitaKg": 26.7,
+    "mismanagedWasteTonsPerYear": 8800000,
+    "recyclingRatePct": 30,
+    "oceanLeakageEstimateTonsPerYear": 800000,
+    "treatyStance": "undecided"
+  },
+  "policies": [
+    {
+      "id": "national-plastic-plan-2020",
+      "name": "Opinions on Further Strengthening Plastic Pollution Control",
+      "enacted": "2020-01-19",
+      "summary": "Phases out non-degradable plastic bags in major cities and bans single-use plastic straws and stir-sticks in restaurants nationwide.",
+      "scope": "national",
+      "sources": [
+        {
+          "url": "https://english.www.gov.cn/policies/policywatch/202001/19/content_WS5e242c3cc6d0f9c5d3a7f2ca.html",
+          "publisher": "Government of the People's Republic of China",
+          "accessedDate": "2026-05-07",
+          "verified": false,
+          "note": "Verify the canonical English text and current effective scope."
+        }
+      ],
+      "lastUpdated": "2026-05-07"
+    }
+  ],
+  "companyIds": ["coca-cola", "pepsico", "nestle"],
+  "newsFeed": [
+    {
+      "id": "scmp-2025-yangtze",
+      "headline": "Yangtze plastic flux drops a fifth as China expands sorting in coastal cities",
+      "url": "https://www.scmp.com/",
+      "publisher": "South China Morning Post",
+      "publishedDate": "2025-09-08",
+      "summary": "A multi-city study reported a measurable decline in plastic carried by the Yangtze, attributed to expanded waste-sorting and bag bans."
+    }
+  ],
+  "wooby": {
+    "headline": "China makes more plastic than any country — but is changing fast.",
+    "narrative": "Wooby travels the East China Sea and sees more plastic than almost anywhere. China makes a lot of the world's plastic, and a lot of its waste. But China has also banned single-use plastic bags in big cities. Wooby is watching closely.",
+    "iconEmoji": "🐉"
+  },
+  "sources": [
+    {
+      "url": "https://ourworldindata.org/plastic-pollution",
+      "publisher": "Our World in Data",
+      "accessedDate": "2026-05-07",
+      "verified": false
+    }
+  ],
+  "lastUpdated": "2026-05-07"
+}

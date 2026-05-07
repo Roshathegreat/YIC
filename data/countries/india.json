@@ -1,0 +1,63 @@
+{
+  "id": "india",
+  "displayName": "India",
+  "iso3": "IND",
+  "m49": 356,
+  "region": "asia",
+  "accentColor": "#ff9933",
+  "stats": {
+    "population": 1430000000,
+    "plasticWastePerCapitaKg": 11.5,
+    "mismanagedWasteTonsPerYear": 5400000,
+    "recyclingRatePct": 60,
+    "oceanLeakageEstimateTonsPerYear": 130000,
+    "treatyStance": "high-ambition"
+  },
+  "policies": [
+    {
+      "id": "single-use-plastic-ban-2022",
+      "name": "Ban on identified single-use plastic items",
+      "enacted": "2022-07-01",
+      "summary": "Bans manufacture, sale, and use of 19 single-use plastic items including straws, cutlery, and thin plastic bags.",
+      "scope": "national",
+      "sources": [
+        {
+          "url": "https://moef.gov.in/",
+          "publisher": "Ministry of Environment, Forest and Climate Change, India",
+          "accessedDate": "2026-05-07"
+        }
+      ],
+      "lastUpdated": "2026-05-07"
+    }
+  ],
+  "companyIds": ["coca-cola", "pepsico", "unilever", "nestle"],
+  "newsFeed": [
+    {
+      "id": "thehindu-2025-epr",
+      "headline": "India's extended producer responsibility rules now cover all plastic packaging",
+      "url": "https://www.thehindu.com/",
+      "publisher": "The Hindu",
+      "publishedDate": "2025-03-15",
+      "summary": "Updated rules require brand owners to collect and recycle a rising share of the plastic they put on the market, with penalties for non-compliance."
+    }
+  ],
+  "wooby": {
+    "headline": "India bans 19 kinds of single-use plastic — informal recyclers do the rest.",
+    "narrative": "Wooby has heard that millions of waste-pickers in India sort plastic by hand every day. India banned plastic straws and thin bags in 2022. Cities like Mumbai are working hard, but a lot of plastic still escapes into rivers. Wooby is grateful for the recyclers.",
+    "iconEmoji": "🇮🇳"
+  },
+  "sources": [
+    {
+      "url": "https://moef.gov.in/",
+      "publisher": "Ministry of Environment, Forest and Climate Change, India",
+      "accessedDate": "2026-05-07"
+    },
+    {
+      "url": "https://ourworldindata.org/plastic-pollution",
+      "publisher": "Our World in Data",
+      "accessedDate": "2026-05-07",
+      "verified": false
+    }
+  ],
+  "lastUpdated": "2026-05-07"
+}

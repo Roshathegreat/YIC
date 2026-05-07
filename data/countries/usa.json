@@ -3,167 +3,77 @@
   "displayName": "United States",
   "iso3": "USA",
   "m49": 840,
-  "accentColor": "#2563eb",
-  "marineAnimal": {
-    "species": "Sea otter (Enhydra lutris)",
-    "spriteId": "otter-usa",
-    "emoji": "🦦",
-    "lobsterRelationship": "A Pacific cousin who Ise meets at the kelp-forest edge — clever with tools, opinionated, sometimes evasive about whose mess is whose."
+  "region": "north-america",
+  "accentColor": "#3c3b6e",
+  "stats": {
+    "population": 334900000,
+    "plasticWastePerCapitaKg": 130.5,
+    "mismanagedWasteTonsPerYear": 1100000,
+    "recyclingRatePct": 9,
+    "oceanLeakageEstimateTonsPerYear": 110000,
+    "treatyStance": "undecided"
   },
-  "treatyPosition": {
-    "currentStance": "The United States supports a global plastics agreement but has historically opposed binding caps on primary plastic polymer production, favoring national flexibility and a focus on waste management, product design, and recycling infrastructure.",
-    "inc52Position": "At INC-5.2 in Geneva (August 2025), the United States did not join the High Ambition Coalition's call for a binding cap on virgin plastic production. The session adjourned without a final treaty text. User: confirm exact US delegation statement before publishing.",
-    "historicalRounds": [
-      {
-        "roundId": "INC-5.2",
-        "date": "2025-08-14",
-        "position": "Engaged in negotiations; declined to support a binding production cap; emphasized national circumstances and downstream measures.",
-        "sources": [
-          {
-            "url": "https://www.unep.org/inc-plastic-pollution",
-            "publisher": "UN Environment Programme",
-            "accessedDate": "2026-05-02",
-            "verified": false,
-            "note": "User: confirm with State Department readout."
-          }
-        ]
-      }
-    ],
-    "sources": [
-      {
-        "url": "https://www.state.gov/",
-        "publisher": "U.S. Department of State",
-        "accessedDate": "2026-05-02",
-        "verified": false,
-        "note": "Replace with direct link to US INC negotiating position."
-      }
-    ],
-    "lastUpdated": "2026-05-03"
-  },
-  "domesticPolicies": [
+  "policies": [
     {
-      "id": "usa-save-our-seas-2.0",
+      "id": "save-our-seas-2",
       "name": "Save Our Seas 2.0 Act",
       "enacted": "2020-12-18",
-      "summary": "Federal law strengthening US marine debris response, expanding the Marine Debris Foundation, and authorizing investment in domestic recycling infrastructure and international partnerships to address plastic pollution.",
+      "summary": "Funds marine debris cleanup, expands recycling infrastructure grants, and asks NOAA to coordinate plastic research.",
       "scope": "national",
       "sources": [
         {
           "url": "https://www.congress.gov/bill/116th-congress/senate-bill/1982",
           "publisher": "U.S. Congress",
-          "accessedDate": "2026-05-02",
-          "verified": false
+          "accessedDate": "2026-05-07"
         }
       ],
-      "lastUpdated": "2026-05-03"
+      "lastUpdated": "2026-05-07"
     },
     {
-      "id": "usa-ca-sb54",
+      "id": "ca-sb-54",
       "name": "California SB 54 — Plastic Pollution Prevention and Packaging Producer Responsibility Act",
       "enacted": "2022-06-30",
-      "summary": "Landmark state-level EPR law requiring producers of single-use packaging and plastic foodware to ensure all such material sold in California is recyclable or compostable by 2032, with phased reductions in single-use plastic packaging and a producer-funded mitigation fund.",
+      "summary": "Requires 100% of single-use packaging in California to be recyclable or compostable by 2032 and shifts cost onto producers.",
       "scope": "subnational",
       "sources": [
         {
           "url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202120220SB54",
           "publisher": "California Legislative Information",
-          "accessedDate": "2026-05-02",
-          "verified": false
+          "accessedDate": "2026-05-07"
         }
       ],
-      "lastUpdated": "2026-05-03"
+      "lastUpdated": "2026-05-07"
     }
   ],
-  "companies": [
+  "companyIds": ["coca-cola", "pepsico", "procter-gamble", "mondelez", "mars", "colgate-palmolive", "philip-morris"],
+  "newsFeed": [
     {
-      "id": "usa-coca-cola",
-      "name": "The Coca-Cola Company",
-      "sector": "Beverages",
-      "commitments": [
-        {
-          "description": "Use at least 25% recycled material in primary consumer packaging across the portfolio (revised target).",
-          "target": "25%",
-          "year": 2035,
-          "sources": [
-            {
-              "url": "https://www.coca-colacompany.com/sustainability/packaging-sustainability",
-              "publisher": "The Coca-Cola Company",
-              "accessedDate": "2026-05-02",
-              "verified": false,
-              "note": "User: confirm current target wording — Coca-Cola revised this several times."
-            }
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "url": "https://www.coca-colacompany.com/sustainability",
-          "publisher": "The Coca-Cola Company",
-          "accessedDate": "2026-05-02",
-          "verified": false
-        }
-      ],
-      "lastUpdated": "2026-05-03"
-    },
-    {
-      "id": "usa-pepsico",
-      "name": "PepsiCo",
-      "sector": "Food & beverages",
-      "commitments": [
-        {
-          "description": "Reduce virgin plastic per serving across global beverage portfolio.",
-          "target": "50% reduction",
-          "year": 2030,
-          "sources": [
-            {
-              "url": "https://www.pepsico.com/our-impact/esg-topics-a-z/packaging",
-              "publisher": "PepsiCo",
-              "accessedDate": "2026-05-02",
-              "verified": false
-            }
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "url": "https://www.pepsico.com/our-impact",
-          "publisher": "PepsiCo",
-          "accessedDate": "2026-05-02",
-          "verified": false
-        }
-      ],
-      "lastUpdated": "2026-05-03"
+      "id": "npr-2025-recycling-myth",
+      "headline": "Less than 9% of U.S. plastic gets recycled, EPA confirms",
+      "url": "https://www.npr.org/sections/environment/",
+      "publisher": "NPR",
+      "publishedDate": "2025-04-22",
+      "summary": "An updated EPA accounting found that despite curbside collection, fewer than 1 in 10 plastic items in the U.S. is actually remade into something new."
     }
   ],
-  "newsFeed": [],
-  "lobsterTranslations": [
+  "wooby": {
+    "headline": "The U.S. uses a lot of plastic — but only a tiny bit gets recycled.",
+    "narrative": "Wooby has seen plastic bottles from American beaches drift all the way to the open Pacific. Most U.S. plastic is buried, burned, or floats away. A few states like California are starting to make rules. Wooby is hopeful but waiting.",
+    "iconEmoji": "🇺🇸"
+  },
+  "sources": [
     {
-      "sourceRecordType": "treaty",
-      "sourceRecordId": "current",
-      "body": "The United States is a big country with a lot of opinions. At the plastic treaty in Geneva last August, when the question was 'should we cap virgin plastic production?' — the US said no. Not no to the treaty itself. No to the cap. The American position is roughly: let countries figure out their own paths, focus on cleanup and recycling. The otter shrugs and says 'national circumstances.' I get it. I also know that the ocean does not have national circumstances.",
-      "generatedAt": "2026-05-03",
-      "modelVersion": "human-draft-v1"
+      "url": "https://www.epa.gov/facts-and-figures-about-materials-waste-and-recycling",
+      "publisher": "U.S. Environmental Protection Agency",
+      "accessedDate": "2026-05-07"
     },
     {
-      "sourceRecordType": "policy",
-      "sourceRecordId": "usa-save-our-seas-2.0",
-      "body": "Save Our Seas 2.0 is a US federal law from December 2020. It strengthens the response to marine debris, funds the Marine Debris Foundation, and puts money into recycling. It is genuine cleanup investment. It is also, like Japan's law, downstream — it works on plastic that already exists. Useful. Not the whole picture.",
-      "generatedAt": "2026-05-03",
-      "modelVersion": "human-draft-v1"
-    },
-    {
-      "sourceRecordType": "policy",
-      "sourceRecordId": "usa-ca-sb54",
-      "body": "California, by itself, is bigger than most countries. SB 54, signed in 2022, makes the producers of single-use packaging pay for and clean up their own mess — what grown-ups call 'extended producer responsibility.' By 2032, all single-use packaging sold in California has to be recyclable or compostable, with phased reductions along the way. This is one of the most aggressive plastic laws in the world. The otter is genuinely proud of this one.",
-      "generatedAt": "2026-05-03",
-      "modelVersion": "human-draft-v1"
-    },
-    {
-      "sourceRecordType": "company",
-      "sourceRecordId": "usa-coca-cola",
-      "body": "Coca-Cola once promised a more ambitious recycled-content target and quietly walked it back to about 25% by 2035. That is the company's current published number. I am not here to dunk on them — they sell a lot of bottles, and a real 25% would still be a significant amount of plastic not made from new oil. But a target that has been revised downward deserves a footnote, and the footnote is: watch what gets delivered, not what gets announced.",
-      "generatedAt": "2026-05-03",
-      "modelVersion": "human-draft-v1"
+      "url": "https://ourworldindata.org/plastic-pollution",
+      "publisher": "Our World in Data",
+      "accessedDate": "2026-05-07",
+      "verified": false,
+      "note": "Cross-check per-capita figure with latest OWID release."
     }
-  ]
+  ],
+  "lastUpdated": "2026-05-07"
 }

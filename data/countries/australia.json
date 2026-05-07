@@ -1,0 +1,57 @@
+{
+  "id": "australia",
+  "displayName": "Australia",
+  "iso3": "AUS",
+  "m49": 36,
+  "region": "oceania",
+  "accentColor": "#00008b",
+  "stats": {
+    "population": 26700000,
+    "plasticWastePerCapitaKg": 100.0,
+    "mismanagedWasteTonsPerYear": 18000,
+    "recyclingRatePct": 13,
+    "oceanLeakageEstimateTonsPerYear": 4500,
+    "treatyStance": "high-ambition"
+  },
+  "policies": [
+    {
+      "id": "national-plastics-plan-2021",
+      "name": "National Plastics Plan",
+      "enacted": "2021-03-04",
+      "summary": "Sets phase-out timelines for problematic single-use plastics including expanded polystyrene packaging, micro-beads in personal care, and PVC labels.",
+      "scope": "national",
+      "sources": [
+        {
+          "url": "https://www.dcceew.gov.au/environment/protection/waste/plastics-and-packaging",
+          "publisher": "Department of Climate Change, Energy, the Environment and Water",
+          "accessedDate": "2026-05-07"
+        }
+      ],
+      "lastUpdated": "2026-05-07"
+    }
+  ],
+  "companyIds": ["coca-cola", "unilever", "nestle"],
+  "newsFeed": [
+    {
+      "id": "abc-2025-soft-plastic",
+      "headline": "Australia's soft-plastic recycling restart adds 1,200 collection points",
+      "url": "https://www.abc.net.au/news",
+      "publisher": "ABC News (Australia)",
+      "publishedDate": "2025-10-14",
+      "summary": "After the 2022 collapse of the REDcycle scheme, a national restart has placed soft-plastic bins back into 1,200 supermarkets."
+    }
+  ],
+  "wooby": {
+    "headline": "Australia uses a lot of plastic — and is restarting soft-plastic recycling.",
+    "narrative": "Wooby's friends on the Great Barrier Reef have seen plastic bags hurt sea turtles. Australia uses a lot of plastic per person, but recycles only a little. Soft-plastic recycling broke and is now starting again. Wooby is hopeful.",
+    "iconEmoji": "🦘"
+  },
+  "sources": [
+    {
+      "url": "https://www.dcceew.gov.au/environment/protection/waste",
+      "publisher": "Department of Climate Change, Energy, the Environment and Water",
+      "accessedDate": "2026-05-07"
+    }
+  ],
+  "lastUpdated": "2026-05-07"
+}

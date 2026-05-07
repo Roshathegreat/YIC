@@ -3,193 +3,64 @@
   "displayName": "Japan",
   "iso3": "JPN",
   "m49": 392,
-  "accentColor": "#dc2626",
-  "marineAnimal": {
-    "species": "Spotted seal (Phoca largha)",
-    "spriteId": "seal-jpn",
-    "emoji": "🦭",
-    "lobsterRelationship": "Ise's neighbor in northern Japanese waters; trusted older friend who has watched Hokkaido coastlines change over decades."
+  "region": "asia",
+  "accentColor": "#bc002d",
+  "stats": {
+    "population": 124400000,
+    "plasticWastePerCapitaKg": 37.8,
+    "mismanagedWasteTonsPerYear": 22000,
+    "recyclingRatePct": 84,
+    "oceanLeakageEstimateTonsPerYear": 5800,
+    "treatyStance": "high-ambition"
   },
-  "treatyPosition": {
-    "currentStance": "Japan supports a legally binding global plastics treaty but has favored a focus on waste management and downstream measures over upstream production caps. It coordinates closely with other consumer-economy negotiating partners.",
-    "inc52Position": "At the resumed INC-5.2 in Geneva (August 2025), Japan continued to support a treaty but did not align with the High Ambition Coalition's call for a binding cap on primary plastic polymer production. The session ended without a final agreed text.",
-    "historicalRounds": [
-      {
-        "roundId": "INC-5.2",
-        "date": "2025-08-14",
-        "position": "Engaged constructively; emphasized full lifecycle approach with strong waste-management language; did not endorse a binding production cap.",
-        "sources": [
-          {
-            "url": "https://www.unep.org/inc-plastic-pollution",
-            "publisher": "UN Environment Programme",
-            "accessedDate": "2026-05-02",
-            "verified": false,
-            "note": "User: confirm Japan's exact INC-5.2 statement before publishing."
-          }
-        ]
-      }
-    ],
-    "sources": [
-      {
-        "url": "https://www.env.go.jp/en/",
-        "publisher": "Ministry of the Environment, Japan",
-        "accessedDate": "2026-05-02",
-        "verified": false,
-        "note": "User: replace with direct link to Japan's INC position paper."
-      }
-    ],
-    "lastUpdated": "2026-05-03"
-  },
-  "domesticPolicies": [
+  "policies": [
     {
-      "id": "jpn-plastic-resource-circulation-act",
-      "name": "Plastic Resource Circulation Act (プラスチック資源循環促進法)",
+      "id": "act-promotion-resource-circulation",
+      "name": "Act on Promotion of Resource Circulation for Plastics",
       "enacted": "2022-04-01",
-      "summary": "Promotes design-for-recycling, expanded sorted collection of plastic waste by municipalities, and obligations on businesses to reduce single-use plastic. Sets a framework for the 3Rs+Renewable across the plastics lifecycle.",
+      "summary": "Requires producers, retailers, and municipalities to design out single-use plastics, set reduction targets, and report progress.",
       "scope": "national",
       "sources": [
         {
           "url": "https://www.env.go.jp/en/recycle/plastic_circulation.html",
           "publisher": "Ministry of the Environment, Japan",
-          "accessedDate": "2026-05-02",
+          "accessedDate": "2026-05-07",
           "verified": false,
-          "note": "User: confirm URL is live; use archive.org backup if redirected."
+          "note": "Confirm latest text and effective date with primary source."
         }
       ],
-      "lastUpdated": "2026-05-03"
-    },
-    {
-      "id": "jpn-bag-charge-2020",
-      "name": "Mandatory plastic shopping bag charge",
-      "enacted": "2020-07-01",
-      "summary": "Retailers nationwide must charge for plastic shopping bags. Reported to have reduced single-use bag consumption sharply in the first year.",
-      "scope": "national",
-      "sources": [
-        {
-          "url": "https://www.meti.go.jp/english/policy/recycle/plasticbag.html",
-          "publisher": "Ministry of Economy, Trade and Industry",
-          "accessedDate": "2026-05-02",
-          "verified": false
-        }
-      ],
-      "lastUpdated": "2026-05-03"
+      "lastUpdated": "2026-05-07"
     }
   ],
-  "companies": [
+  "companyIds": ["coca-cola", "unilever", "nestle"],
+  "newsFeed": [
     {
-      "id": "jpn-suntory",
-      "name": "Suntory Holdings",
-      "sector": "Beverages",
-      "commitments": [
-        {
-          "description": "Switch all PET bottles globally to recycled or plant-based materials.",
-          "target": "100%",
-          "year": 2030,
-          "sources": [
-            {
-              "url": "https://www.suntory.com/csr/activity/environment/eco/plastic/",
-              "publisher": "Suntory Holdings",
-              "accessedDate": "2026-05-02",
-              "verified": false
-            }
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "url": "https://www.suntory.com/csr/",
-          "publisher": "Suntory Holdings",
-          "accessedDate": "2026-05-02",
-          "verified": false
-        }
-      ],
-      "lastUpdated": "2026-05-03"
-    },
-    {
-      "id": "jpn-sevenandi",
-      "name": "Seven & i Holdings",
-      "sector": "Convenience retail",
-      "commitments": [
-        {
-          "description": "Reduce plastic packaging in original products and shift to bio-based, recycled, or paper materials.",
-          "year": 2030,
-          "sources": [
-            {
-              "url": "https://www.7andi.com/en/sustainability/theme/theme2/plastic.html",
-              "publisher": "Seven & i Holdings",
-              "accessedDate": "2026-05-02",
-              "verified": false
-            }
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "url": "https://www.7andi.com/en/sustainability/",
-          "publisher": "Seven & i Holdings",
-          "accessedDate": "2026-05-02",
-          "verified": false
-        }
-      ],
-      "lastUpdated": "2026-05-03"
+      "id": "asahi-2025-microplastic-tokyo-bay",
+      "headline": "Microplastic levels in Tokyo Bay sediments still rising, researchers report",
+      "url": "https://www.asahi.com/ajw/",
+      "publisher": "The Asahi Shimbun",
+      "publishedDate": "2025-11-12",
+      "summary": "A multi-year monitoring study found microplastic concentrations in Tokyo Bay continued to rise through 2024 despite domestic recycling gains."
     }
   ],
-  "newsFeed": [],
-  "lobsterTranslations": [
+  "wooby": {
+    "headline": "Japan recycles a lot — but the bay is still full of tiny plastic.",
+    "narrative": "Wooby swims near Beppu and watches recycling trucks all day. Japan recycles more bottles than almost anyone, but tiny pieces of plastic still drift down to the seabed. Wooby says: recycling helps, but using less plastic helps even more.",
+    "iconEmoji": "🗾"
+  },
+  "sources": [
     {
-      "sourceRecordType": "treaty",
-      "sourceRecordId": "current",
-      "body": "Okay, here's the honest version. Japan turns up at the treaty table. Japan signs the visitor's book. But when the room asks 'should we cap how much new plastic the world is allowed to make?' — Japan looks at its shoes. It would rather we get really good at cleaning up afterwards. The High Ambition Coalition wants a hard limit on virgin plastic. Japan, in Geneva last August, did not stand with them. The session ended with no final text. I'm not pretending Japan is the villain. I'm saying: clean-up is downstream of me, in Beppu Bay. By the time it's my problem, it's already too late.",
-      "generatedAt": "2026-05-03",
-      "modelVersion": "human-draft-v1"
+      "url": "https://ourworldindata.org/plastic-pollution",
+      "publisher": "Our World in Data",
+      "accessedDate": "2026-05-07",
+      "verified": false,
+      "note": "Per-capita and mismanaged-waste figures should be cross-checked with the latest OWID dataset."
     },
     {
-      "sourceRecordType": "policy",
-      "sourceRecordId": "jpn-plastic-resource-circulation-act",
-      "body": "Since April 2022, Japan has had a law called the Plastic Resource Circulation Act. It is the law that tells your convenience store to ask if you really need that little plastic spoon. It tells towns to sort plastic from other trash, and tells companies to design products that can actually be recycled instead of just looking recyclable. It is genuinely a step. It is not a cap on how much plastic Japan makes in the first place — that distinction matters when you live downstream of a river.",
-      "generatedAt": "2026-05-03",
-      "modelVersion": "human-draft-v1"
-    },
-    {
-      "sourceRecordType": "policy",
-      "sourceRecordId": "jpn-bag-charge-2020",
-      "body": "From July 2020 every shop in Japan started charging for plastic bags. Just a few yen, but enough that people started bringing their own. Plastic bag use dropped fast in the first year. A small habit, scaled across a hundred million people, is not nothing. It is also, by itself, not enough. Bags are a slice of the problem; the bigger slice is upstream of any cashier.",
-      "generatedAt": "2026-05-03",
-      "modelVersion": "human-draft-v1"
-    },
-    {
-      "sourceRecordType": "company",
-      "sourceRecordId": "jpn-suntory",
-      "body": "Suntory makes a lot of bottles. They have promised that by 2030, every PET bottle they sell anywhere in the world will be recycled or plant-based — no new fossil plastic. That's a real promise on paper. The test is whether the bottle in your hand five years from now actually says so. Pledges age. I'll be checking.",
-      "generatedAt": "2026-05-03",
-      "modelVersion": "human-draft-v1"
-    },
-    {
-      "sourceRecordType": "beppu",
-      "sourceRecordId": "beppu",
-      "body": "This is home, so I'll go slowly. Beppu sits at the bottom of mountains. The rivers here are short and steep, which means rain doesn't take its time — it sprints to the sea, and it brings whatever was lying around with it. After a heavy storm I find packaging fragments and bits of fishing gear washed up within hours. Cleanup volunteers come out and pick the beach clean, and the next storm refills it. This is what 'source-to-sea' means in one bay: the source isn't far away. It is the street, the slope, the river, and then me. The specific numbers and the names of the local groups doing the work — those go in the source records on the Ledger, and we are still filling those in carefully.",
-      "generatedAt": "2026-05-03",
-      "modelVersion": "human-draft-v1"
+      "url": "https://www.env.go.jp/en/",
+      "publisher": "Ministry of the Environment, Japan",
+      "accessedDate": "2026-05-07"
     }
   ],
-  "deepNode": {
-    "marineDebrisData": "Beppu Bay receives marine debris from rivers draining the Oita prefecture watershed and from drift currents along the Inland Sea. Local beach surveys consistently find single-use plastic packaging, fishing gear fragments, and microplastics. Quantitative figures pending — user to fill from local source.",
-    "cleanupOrgs": [
-      {
-        "name": "Beppu beach cleanup volunteers (placeholder)",
-        "description": "User: replace with real local org and contact details. Common candidates include local fishing cooperatives and the Oita prefectural environmental division."
-      }
-    ],
-    "hydrology": "Beppu sits at the foot of mountains that drain quickly to the Inland Sea via short, steep rivers. Heavy rainfall events flush land-based litter to the coast in a matter of hours, making Beppu a tight source-to-sea case study. User: add specific river names and gauge data.",
-    "sources": [
-      {
-        "url": "https://www.pref.oita.jp/site/english/",
-        "publisher": "Oita Prefectural Government",
-        "accessedDate": "2026-05-02",
-        "verified": false,
-        "note": "Placeholder source. Replace with cited Beppu-specific marine debris study."
-      }
-    ],
-    "lastUpdated": "2026-05-03"
-  }
+  "lastUpdated": "2026-05-07"
 }

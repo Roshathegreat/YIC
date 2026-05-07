@@ -1,0 +1,72 @@
+{
+  "id": "southkorea",
+  "displayName": "South Korea",
+  "iso3": "KOR",
+  "m49": 410,
+  "region": "asia",
+  "accentColor": "#003478",
+  "stats": {
+    "population": 51700000,
+    "plasticWastePerCapitaKg": 88.0,
+    "mismanagedWasteTonsPerYear": 9000,
+    "recyclingRatePct": 73,
+    "oceanLeakageEstimateTonsPerYear": 3200,
+    "treatyStance": "high-ambition"
+  },
+  "policies": [
+    {
+      "id": "epr-system-2003-update",
+      "name": "Extended Producer Responsibility (EPR) system",
+      "enacted": "2003-01-01",
+      "summary": "One of the world's earliest mandatory EPR programmes, requiring producers to take back and recycle packaging, batteries, tyres, and electronics.",
+      "scope": "national",
+      "sources": [
+        {
+          "url": "https://eng.me.go.kr/eng/web/main.do",
+          "publisher": "Ministry of Environment, Republic of Korea",
+          "accessedDate": "2026-05-07"
+        }
+      ],
+      "lastUpdated": "2026-05-07"
+    },
+    {
+      "id": "disposable-cup-deposit",
+      "name": "Disposable cup deposit pilot",
+      "enacted": "2022-12-02",
+      "summary": "Pilot programme in Jeju and Sejong charges a refundable deposit on coffee-shop disposable cups; under nationwide review for expansion.",
+      "scope": "subnational",
+      "sources": [
+        {
+          "url": "https://eng.me.go.kr/eng/web/main.do",
+          "publisher": "Ministry of Environment, Republic of Korea",
+          "accessedDate": "2026-05-07"
+        }
+      ],
+      "lastUpdated": "2026-05-07"
+    }
+  ],
+  "companyIds": ["coca-cola", "nestle"],
+  "newsFeed": [
+    {
+      "id": "korea-times-2025-cafe",
+      "headline": "Seoul cafes pilot reusable cup-share scheme as disposable use rebounds",
+      "url": "https://www.koreatimes.co.kr/",
+      "publisher": "The Korea Times",
+      "publishedDate": "2025-08-05",
+      "summary": "After post-pandemic disposable-cup use rebounded, Seoul partnered with chains on a borrow-and-return reusable cup network."
+    }
+  ],
+  "wooby": {
+    "headline": "South Korea recycles more than 7 in 10 plastic items — and is testing reusable coffee cups.",
+    "narrative": "Wooby thinks South Korea is one of the recycling champions. Some cities are even testing reusable coffee cups you borrow and bring back. Wooby would love a coffee. (No, Wooby is a whale.)",
+    "iconEmoji": "🇰🇷"
+  },
+  "sources": [
+    {
+      "url": "https://eng.me.go.kr/eng/web/main.do",
+      "publisher": "Ministry of Environment, Republic of Korea",
+      "accessedDate": "2026-05-07"
+    }
+  ],
+  "lastUpdated": "2026-05-07"
+}

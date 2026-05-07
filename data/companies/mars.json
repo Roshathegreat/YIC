@@ -1,0 +1,45 @@
+{
+  "id": "mars",
+  "name": "Mars, Incorporated",
+  "hqCountryId": "usa",
+  "sector": "Confectionery & pet food",
+  "logoEmoji": "🍫",
+  "brandColor": "#0033a0",
+  "stats": {
+    "plasticFootprintTonsPerYear": 180000,
+    "brandAuditRank": 6,
+    "recycledContentPct": 2,
+    "commitmentScore": 2.5,
+    "transparencyScore": 3
+  },
+  "commitments": [
+    {
+      "description": "Make all packaging reusable, recyclable, or compostable by 2025; cut virgin plastic 25% by 2025.",
+      "target": "-25%",
+      "year": 2025
+    },
+    {
+      "description": "Invest US$1 billion through 2030 in sustainability initiatives including packaging redesign.",
+      "year": 2030
+    }
+  ],
+  "controversies": [
+    {
+      "description": "Wrappers from M&M's, Snickers, and Twix consistently appear on beach-audit top-10 lists.",
+      "year": 2023
+    }
+  ],
+  "wooby": {
+    "headline": "Mars makes Snickers and M&Ms — and is trying paper wrappers.",
+    "narrative": "Mars makes Snickers, M&M's, Twix, and pet food too. They are testing paper wrappers for some chocolate bars. Wooby thinks paper is much friendlier to fish and turtles than plastic.",
+    "iconEmoji": "🌊"
+  },
+  "sources": [
+    {
+      "url": "https://www.mars.com/sustainability-plan/healthy-planet/sustainable-packaging",
+      "publisher": "Mars, Incorporated",
+      "accessedDate": "2026-05-07"
+    }
+  ],
+  "lastUpdated": "2026-05-07"
+}

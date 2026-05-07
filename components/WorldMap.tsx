@@ -11,16 +11,20 @@ import {
 import { geoCentroid } from "d3-geo";
 import { feature as topoFeature } from "topojson-client";
 import worldTopo from "world-atlas/countries-110m.json";
-import type { Country } from "@/lib/schema";
 
-type Variant = "ledger" | "lobster";
+type Variant = "ledger" | "wooby";
+
+export interface WorldMapCountry {
+  id: string;
+  displayName: string;
+  m49: number;
+  accentColor: string;
+  iconEmoji?: string;
+}
 
 interface WorldMapProps {
   variant: Variant;
-  countries: Pick<
-    Country,
-    "id" | "displayName" | "iso3" | "m49" | "accentColor" | "marineAnimal"
-  >[];
+  countries: WorldMapCountry[];
 }
 
 const STYLE: Record<
@@ -29,13 +33,13 @@ const STYLE: Record<
 > = {
   ledger: {
     bg: "bg-white",
-    defaultFill: "#e5e7eb",
+    defaultFill: "#eef2f7",
     defaultStroke: "#ffffff",
   },
-  lobster: {
-    bg: "bg-slate-900",
-    defaultFill: "#374151",
-    defaultStroke: "#0f172a",
+  wooby: {
+    bg: "bg-transparent",
+    defaultFill: "rgba(255,255,255,0.18)",
+    defaultStroke: "rgba(255,255,255,0.35)",
   },
 };
 
@@ -49,7 +53,7 @@ export default function WorldMap({ variant, countries }: WorldMapProps) {
   const style = STYLE[variant];
 
   const byM49 = useMemo(() => {
-    const map = new Map<string, (typeof countries)[number]>();
+    const map = new Map<string, WorldMapCountry>();
     for (const c of countries) map.set(String(c.m49), c);
     return map;
   }, [countries]);
@@ -67,13 +71,13 @@ export default function WorldMap({ variant, countries }: WorldMapProps) {
   }, [countries]);
 
   const hrefFor = (id: string) =>
-    variant === "ledger" ? `/countries/${id}` : `/lobster/countries/${id}`;
+    variant === "ledger" ? `/countries/${id}` : `/wooby/countries/${id}`;
 
   return (
-    <div className={`w-full ${style.bg} rounded-lg overflow-hidden`}>
+    <div className={`w-full ${style.bg} rounded-2xl overflow-hidden`}>
       <ComposableMap
         projection="geoEqualEarth"
-        projectionConfig={{ scale: 155, center: [10, 10] }}
+        projectionConfig={{ scale: 165, center: [10, 5] }}
         style={{ width: "100%", height: "auto" }}
       >
         <Geographies geography={TOPO}>
@@ -100,15 +104,12 @@ export default function WorldMap({ variant, countries }: WorldMapProps) {
                     hover: {
                       fill: isHighlighted ? fill : style.defaultFill,
                       stroke: style.defaultStroke,
-                      strokeWidth: 0.75,
+                      strokeWidth: 0.9,
                       outline: "none",
-                      filter: isHighlighted ? "brightness(0.85)" : "none",
+                      filter: isHighlighted ? "brightness(1.15)" : "none",
                       cursor: isHighlighted ? "pointer" : "default",
                     },
-                    pressed: {
-                      fill,
-                      outline: "none",
-                    },
+                    pressed: { fill, outline: "none" },
                   }}
                 />
               );
@@ -116,10 +117,10 @@ export default function WorldMap({ variant, countries }: WorldMapProps) {
           }
         </Geographies>
 
-        {variant === "lobster" &&
+        {variant === "wooby" &&
           countries.map((c) => {
             const centroid = centroidsByCountryId.get(c.id);
-            if (!centroid) return null;
+            if (!centroid || !c.iconEmoji) return null;
             return (
               <Marker
                 key={c.id}
@@ -132,7 +133,7 @@ export default function WorldMap({ variant, countries }: WorldMapProps) {
                   y={5}
                   style={{ fontSize: 18, userSelect: "none" }}
                 >
-                  {c.marineAnimal.emoji}
+                  {c.iconEmoji}
                 </text>
               </Marker>
             );

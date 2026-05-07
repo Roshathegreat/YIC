@@ -1,0 +1,57 @@
+{
+  "id": "indonesia",
+  "displayName": "Indonesia",
+  "iso3": "IDN",
+  "m49": 360,
+  "region": "asia",
+  "accentColor": "#ff0000",
+  "stats": {
+    "population": 277500000,
+    "plasticWastePerCapitaKg": 23.0,
+    "mismanagedWasteTonsPerYear": 4900000,
+    "recyclingRatePct": 11,
+    "oceanLeakageEstimateTonsPerYear": 620000,
+    "treatyStance": "high-ambition"
+  },
+  "policies": [
+    {
+      "id": "national-plastic-action-plan",
+      "name": "National Plastic Action Plan",
+      "enacted": "2020-01-01",
+      "summary": "Targets a 70% reduction in marine plastic leakage by 2025 through bans on key single-use items, expanded collection, and producer responsibility.",
+      "scope": "national",
+      "sources": [
+        {
+          "url": "https://www.menlhk.go.id/",
+          "publisher": "Ministry of Environment and Forestry, Indonesia",
+          "accessedDate": "2026-05-07"
+        }
+      ],
+      "lastUpdated": "2026-05-07"
+    }
+  ],
+  "companyIds": ["coca-cola", "unilever", "nestle"],
+  "newsFeed": [
+    {
+      "id": "jakartapost-2025-rivers",
+      "headline": "Citarum cleanup recovers 320 tonnes of plastic in three-month push",
+      "url": "https://www.thejakartapost.com/",
+      "publisher": "The Jakarta Post",
+      "publishedDate": "2025-07-22",
+      "summary": "A large cleanup of the Citarum river — once called the world's most polluted — pulled out hundreds of tonnes of plastic, mostly food packaging."
+    }
+  ],
+  "wooby": {
+    "headline": "Indonesia is one of the biggest sources of ocean plastic — and is fighting back.",
+    "narrative": "Wooby visits the warm reefs of Indonesia and sees plastic bags drifting between the coral. Indonesia has thousands of islands and big rivers that carry waste to the sea. The country has set a bold goal: cut ocean plastic by 70%. Wooby is cheering them on.",
+    "iconEmoji": "🌺"
+  },
+  "sources": [
+    {
+      "url": "https://www.worldbank.org/en/country/indonesia/publication/plastic-waste-discharges-from-rivers-and-coastlines-in-indonesia",
+      "publisher": "World Bank",
+      "accessedDate": "2026-05-07"
+    }
+  ],
+  "lastUpdated": "2026-05-07"
+}

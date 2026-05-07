@@ -1,0 +1,57 @@
+{
+  "id": "canada",
+  "displayName": "Canada",
+  "iso3": "CAN",
+  "m49": 124,
+  "region": "north-america",
+  "accentColor": "#d52b1e",
+  "stats": {
+    "population": 40500000,
+    "plasticWastePerCapitaKg": 80.5,
+    "mismanagedWasteTonsPerYear": 30000,
+    "recyclingRatePct": 9,
+    "oceanLeakageEstimateTonsPerYear": 8000,
+    "treatyStance": "high-ambition"
+  },
+  "policies": [
+    {
+      "id": "single-use-plastics-prohibition-2022",
+      "name": "Single-Use Plastics Prohibition Regulations",
+      "enacted": "2022-12-20",
+      "summary": "Bans the manufacture, import, and sale of six single-use plastic items: checkout bags, cutlery, foodservice ware made from problematic plastics, ring carriers, stir sticks, and straws.",
+      "scope": "national",
+      "sources": [
+        {
+          "url": "https://www.canada.ca/en/environment-climate-change/services/managing-reducing-waste/reduce-plastic-waste/single-use-plastic-overview.html",
+          "publisher": "Government of Canada",
+          "accessedDate": "2026-05-07"
+        }
+      ],
+      "lastUpdated": "2026-05-07"
+    }
+  ],
+  "companyIds": ["coca-cola", "pepsico", "procter-gamble"],
+  "newsFeed": [
+    {
+      "id": "cbc-2025-court-ruling",
+      "headline": "Canada's plastic ban survives industry court challenge on appeal",
+      "url": "https://www.cbc.ca/news",
+      "publisher": "CBC News",
+      "publishedDate": "2025-11-21",
+      "summary": "A federal appeal court upheld Canada's authority to regulate single-use plastics as a toxic substance, clearing the way for ongoing enforcement."
+    }
+  ],
+  "wooby": {
+    "headline": "Canada banned 6 kinds of single-use plastic — and won in court.",
+    "narrative": "Wooby visits Canada's long Pacific and Atlantic coasts. In 2022 Canada banned plastic straws, cutlery, bags, and rings — yes, the rings that hold soda cans together that hurt animals. Some companies took Canada to court, but Canada won. Wooby is proud.",
+    "iconEmoji": "🍁"
+  },
+  "sources": [
+    {
+      "url": "https://www.canada.ca/en/environment-climate-change/services/managing-reducing-waste/reduce-plastic-waste.html",
+      "publisher": "Environment and Climate Change Canada",
+      "accessedDate": "2026-05-07"
+    }
+  ],
+  "lastUpdated": "2026-05-07"
+}

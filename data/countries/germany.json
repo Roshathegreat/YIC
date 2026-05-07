@@ -1,0 +1,72 @@
+{
+  "id": "germany",
+  "displayName": "Germany",
+  "iso3": "DEU",
+  "m49": 276,
+  "region": "europe",
+  "accentColor": "#dd0000",
+  "stats": {
+    "population": 84500000,
+    "plasticWastePerCapitaKg": 81.0,
+    "mismanagedWasteTonsPerYear": 12000,
+    "recyclingRatePct": 56,
+    "oceanLeakageEstimateTonsPerYear": 1900,
+    "treatyStance": "high-ambition"
+  },
+  "policies": [
+    {
+      "id": "verpackungsgesetz",
+      "name": "Verpackungsgesetz (Packaging Act)",
+      "enacted": "2019-01-01",
+      "summary": "Sets binding recycling quotas (currently 63% for plastic packaging) and requires producers to register and pay licence fees that fund collection.",
+      "scope": "national",
+      "sources": [
+        {
+          "url": "https://www.verpackungsregister.org/en/",
+          "publisher": "Stiftung Zentrale Stelle Verpackungsregister",
+          "accessedDate": "2026-05-07"
+        }
+      ],
+      "lastUpdated": "2026-05-07"
+    },
+    {
+      "id": "einwegkunststoffgesetz",
+      "name": "Single-Use Plastics Act",
+      "enacted": "2021-07-03",
+      "summary": "Implements the EU directive banning single-use plastic plates, cutlery, straws, stirrers, and polystyrene takeaway containers.",
+      "scope": "national",
+      "sources": [
+        {
+          "url": "https://www.bmuv.de/",
+          "publisher": "Federal Ministry for the Environment, Germany",
+          "accessedDate": "2026-05-07"
+        }
+      ],
+      "lastUpdated": "2026-05-07"
+    }
+  ],
+  "companyIds": ["coca-cola", "unilever", "nestle"],
+  "newsFeed": [
+    {
+      "id": "dw-2025-pfand-record",
+      "headline": "Germany's bottle-deposit return rate hits 98% for plastic bottles",
+      "url": "https://www.dw.com/en",
+      "publisher": "Deutsche Welle",
+      "publishedDate": "2025-05-30",
+      "summary": "Industry data confirmed 98 of every 100 plastic deposit bottles in Germany are returned, recycled, and refilled or remade."
+    }
+  ],
+  "wooby": {
+    "headline": "Germany returns 98% of its plastic deposit bottles. Almost all of them!",
+    "narrative": "Wooby is amazed: in Germany, almost every plastic bottle you buy comes with a small deposit you get back when you return it. So 98 out of every 100 bottles get recycled. Wooby wishes every country did this.",
+    "iconEmoji": "🥨"
+  },
+  "sources": [
+    {
+      "url": "https://www.umweltbundesamt.de/en",
+      "publisher": "German Environment Agency (UBA)",
+      "accessedDate": "2026-05-07"
+    }
+  ],
+  "lastUpdated": "2026-05-07"
+}

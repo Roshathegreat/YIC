@@ -1,0 +1,42 @@
+{
+  "id": "perfetti-vanmelle",
+  "name": "Perfetti Van Melle",
+  "hqCountryId": "italy",
+  "sector": "Confectionery",
+  "logoEmoji": "🍬",
+  "brandColor": "#e3001b",
+  "stats": {
+    "plasticFootprintTonsPerYear": 60000,
+    "brandAuditRank": 10,
+    "recycledContentPct": 1,
+    "commitmentScore": 1.5,
+    "transparencyScore": 2
+  },
+  "commitments": [
+    {
+      "description": "100% recyclable, reusable, or compostable primary packaging by 2025.",
+      "target": "100%",
+      "year": 2025
+    }
+  ],
+  "controversies": [
+    {
+      "description": "Mentos and Chupa Chups wrappers consistently appear in European beach-litter audits.",
+      "year": 2023
+    }
+  ],
+  "wooby": {
+    "headline": "Mentos and Chupa Chups wrappers — Wooby finds them on European beaches.",
+    "narrative": "Perfetti Van Melle makes Mentos and Chupa Chups lollipops. Each lollipop has a tiny plastic wrapper that's hard to recycle. Wooby asks: please use a bin or take it home.",
+    "iconEmoji": "🌊"
+  },
+  "sources": [
+    {
+      "url": "https://www.perfettivanmelle.com/sustainability/",
+      "publisher": "Perfetti Van Melle",
+      "accessedDate": "2026-05-07",
+      "verified": false
+    }
+  ],
+  "lastUpdated": "2026-05-07"
+}

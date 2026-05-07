@@ -1,0 +1,50 @@
+{
+  "id": "philip-morris",
+  "name": "Philip Morris International",
+  "hqCountryId": "usa",
+  "sector": "Tobacco",
+  "logoEmoji": "🚬",
+  "brandColor": "#a32638",
+  "stats": {
+    "plasticFootprintTonsPerYear": 95000,
+    "brandAuditRank": 8,
+    "recycledContentPct": 0,
+    "commitmentScore": 1,
+    "transparencyScore": 2
+  },
+  "commitments": [
+    {
+      "description": "Stated goal to reduce post-consumer plastic litter from cigarette filters and devices by 50% by 2025.",
+      "target": "-50%",
+      "year": 2025
+    }
+  ],
+  "controversies": [
+    {
+      "description": "Cigarette butts, which contain a plastic filter, are the most common item found in beach-cleanup audits worldwide.",
+      "year": 2024
+    },
+    {
+      "description": "Heated-tobacco device packaging adds further single-use plastic per unit.",
+      "year": 2024
+    }
+  ],
+  "wooby": {
+    "headline": "Cigarette filters are tiny plastic pieces — and they end up everywhere.",
+    "narrative": "Wooby has a sad fact to share: cigarette filters are made of plastic, not paper. They are the most common item picked up on beach cleanups. If you smoke, please put them in the bin — never on the ground.",
+    "iconEmoji": "🌊"
+  },
+  "sources": [
+    {
+      "url": "https://www.pmi.com/sustainability",
+      "publisher": "Philip Morris International",
+      "accessedDate": "2026-05-07"
+    },
+    {
+      "url": "https://oceanconservancy.org/trash-free-seas/international-coastal-cleanup/",
+      "publisher": "Ocean Conservancy",
+      "accessedDate": "2026-05-07"
+    }
+  ],
+  "lastUpdated": "2026-05-07"
+}

@@ -1,0 +1,56 @@
+{
+  "id": "unilever",
+  "name": "Unilever",
+  "hqCountryId": "uk",
+  "sector": "Personal care & food",
+  "logoEmoji": "🧴",
+  "brandColor": "#1f36c7",
+  "stats": {
+    "plasticFootprintTonsPerYear": 690000,
+    "brandAuditRank": 4,
+    "recycledContentPct": 22,
+    "commitmentScore": 3.5,
+    "transparencyScore": 4
+  },
+  "commitments": [
+    {
+      "description": "Halve virgin plastic use by 2025; cut absolute virgin plastic use 30% by 2026 (vs 2019).",
+      "target": "-50%",
+      "year": 2025
+    },
+    {
+      "description": "Collect and process more plastic packaging than it sells (originally 2025).",
+      "year": 2025
+    },
+    {
+      "description": "Reach 25% post-consumer recycled content in plastic packaging by 2025.",
+      "target": "25%",
+      "year": 2025
+    }
+  ],
+  "controversies": [
+    {
+      "description": "In 2023 Unilever weakened its 2025 virgin-plastic-halving target, drawing criticism from investors.",
+      "year": 2023
+    }
+  ],
+  "wooby": {
+    "headline": "Unilever talks about less plastic — and has done some of it.",
+    "narrative": "Unilever makes Dove soap, Hellmann's mayo, and Lipton tea. They promised to cut new plastic in half. They have done some of it but recently said it's harder than they thought. Wooby thinks they should still try.",
+    "iconEmoji": "🌊"
+  },
+  "sources": [
+    {
+      "url": "https://www.unilever.com/sustainability/waste-and-packaging/",
+      "publisher": "Unilever",
+      "accessedDate": "2026-05-07"
+    },
+    {
+      "url": "https://emf.thirdlight.com/",
+      "publisher": "Ellen MacArthur Foundation Global Commitment",
+      "accessedDate": "2026-05-07",
+      "verified": false
+    }
+  ],
+  "lastUpdated": "2026-05-07"
+}

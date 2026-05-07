@@ -1,0 +1,47 @@
+{
+  "id": "ferrero",
+  "name": "Ferrero",
+  "hqCountryId": "italy",
+  "sector": "Confectionery",
+  "logoEmoji": "🍫",
+  "brandColor": "#5e2e2c",
+  "stats": {
+    "plasticFootprintTonsPerYear": 100000,
+    "brandAuditRank": 12,
+    "recycledContentPct": 4,
+    "commitmentScore": 2.5,
+    "transparencyScore": 2.5
+  },
+  "commitments": [
+    {
+      "description": "Make 100% of packaging reusable, recyclable, or compostable by 2025.",
+      "target": "100%",
+      "year": 2025
+    },
+    {
+      "description": "Use 12% recycled or renewable plastic in packaging by 2025.",
+      "target": "12%",
+      "year": 2025
+    }
+  ],
+  "controversies": [
+    {
+      "description": "Kinder Surprise plastic egg-halves are individually wrapped and frequently appear in litter audits.",
+      "year": 2023
+    }
+  ],
+  "wooby": {
+    "headline": "Ferrero makes Nutella and Kinder — and tiny plastic toy capsules.",
+    "narrative": "Ferrero makes Nutella, Kinder eggs, and Tic Tacs. Wooby has spotted Kinder egg halves on Italian beaches — they look like little white cups. Ferrero is changing some of them to paper. Wooby is hopeful.",
+    "iconEmoji": "🌊"
+  },
+  "sources": [
+    {
+      "url": "https://www.ferrerosustainability.com/int/en/packaging",
+      "publisher": "Ferrero",
+      "accessedDate": "2026-05-07",
+      "verified": false
+    }
+  ],
+  "lastUpdated": "2026-05-07"
+}

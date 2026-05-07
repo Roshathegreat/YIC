@@ -1,13 +1,11 @@
-import { LOBSTER_VOICE } from "./lobster-voice";
-
 export interface TranslationInput {
   sourceRecordId: string;
-  sourceRecordType: "policy" | "treaty" | "news" | "company" | "beppu";
+  sourceRecordType: "policy" | "news" | "company" | "country";
   sourceText: string;
-  countryName: string;
+  audience: "kid" | "researcher";
 }
 
-export interface LobsterTranslation {
+export interface WoobyTranslation {
   sourceRecordId: string;
   sourceRecordType: TranslationInput["sourceRecordType"];
   generatedAt: string;
@@ -15,16 +13,15 @@ export interface LobsterTranslation {
   body: string;
 }
 
-export async function translateToLobsterVoice(
+export async function translateToWoobyVoice(
   input: TranslationInput,
-): Promise<LobsterTranslation> {
+): Promise<WoobyTranslation> {
   const apiKey = process.env.ANTHROPIC_API_KEY;
   if (!apiKey) {
     throw new Error(
-      "ANTHROPIC_API_KEY not set — translation layer is stubbed until week 2.",
+      "ANTHROPIC_API_KEY not set — translation layer is stubbed.",
     );
   }
-  void LOBSTER_VOICE;
   void input;
-  throw new Error("translateToLobsterVoice: implementation lands week 2.");
+  throw new Error("translateToWoobyVoice: not yet implemented.");
 }

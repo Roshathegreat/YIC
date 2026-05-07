@@ -1,0 +1,72 @@
+{
+  "id": "uk",
+  "displayName": "United Kingdom",
+  "iso3": "GBR",
+  "m49": 826,
+  "region": "europe",
+  "accentColor": "#012169",
+  "stats": {
+    "population": 67900000,
+    "plasticWastePerCapitaKg": 99.0,
+    "mismanagedWasteTonsPerYear": 30000,
+    "recyclingRatePct": 44,
+    "oceanLeakageEstimateTonsPerYear": 4200,
+    "treatyStance": "high-ambition"
+  },
+  "policies": [
+    {
+      "id": "plastic-packaging-tax",
+      "name": "Plastic Packaging Tax",
+      "enacted": "2022-04-01",
+      "summary": "Charges £200/tonne on plastic packaging containing less than 30% recycled content, pushing brands to use more recycled plastic.",
+      "scope": "national",
+      "sources": [
+        {
+          "url": "https://www.gov.uk/government/publications/introduction-of-plastic-packaging-tax",
+          "publisher": "HM Revenue & Customs",
+          "accessedDate": "2026-05-07"
+        }
+      ],
+      "lastUpdated": "2026-05-07"
+    },
+    {
+      "id": "single-use-plastic-ban-2023",
+      "name": "Ban on single-use plastic plates, cutlery, and polystyrene takeaway containers",
+      "enacted": "2023-10-01",
+      "summary": "Bans the supply of named single-use plastic items in England.",
+      "scope": "subnational",
+      "sources": [
+        {
+          "url": "https://www.gov.uk/government/news/far-reaching-ban-on-single-use-plastics-in-england",
+          "publisher": "Department for Environment, Food and Rural Affairs",
+          "accessedDate": "2026-05-07"
+        }
+      ],
+      "lastUpdated": "2026-05-07"
+    }
+  ],
+  "companyIds": ["coca-cola", "pepsico", "unilever", "nestle"],
+  "newsFeed": [
+    {
+      "id": "guardian-2025-deposit-return",
+      "headline": "UK deposit-return scheme delayed again to 2027",
+      "url": "https://www.theguardian.com/environment",
+      "publisher": "The Guardian",
+      "publishedDate": "2025-04-25",
+      "summary": "Plans for a nationwide bottle-deposit scheme have slipped to 2027, drawing criticism from environmental groups."
+    }
+  ],
+  "wooby": {
+    "headline": "The UK taxes plastic packaging that doesn't have recycled stuff in it.",
+    "narrative": "Wooby thinks the UK's idea is clever: if you make packaging from new plastic, you pay extra. If you use recycled plastic, you pay less. That makes recycling worth it for big brands.",
+    "iconEmoji": "🇬🇧"
+  },
+  "sources": [
+    {
+      "url": "https://www.gov.uk/government/publications/uk-statistics-on-waste",
+      "publisher": "Department for Environment, Food and Rural Affairs",
+      "accessedDate": "2026-05-07"
+    }
+  ],
+  "lastUpdated": "2026-05-07"
+}

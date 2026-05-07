@@ -1,0 +1,58 @@
+{
+  "id": "vietnam",
+  "displayName": "Vietnam",
+  "iso3": "VNM",
+  "m49": 704,
+  "region": "asia",
+  "accentColor": "#da251d",
+  "stats": {
+    "population": 99500000,
+    "plasticWastePerCapitaKg": 27.4,
+    "mismanagedWasteTonsPerYear": 1800000,
+    "recyclingRatePct": 27,
+    "oceanLeakageEstimateTonsPerYear": 280000,
+    "treatyStance": "undecided"
+  },
+  "policies": [
+    {
+      "id": "decree-08-2022",
+      "name": "Decree 08/2022 — Environmental Protection Law implementation",
+      "enacted": "2022-01-10",
+      "summary": "Sets producer responsibility for plastic packaging and requires phase-out of hard-to-recycle plastics in retail by 2026.",
+      "scope": "national",
+      "sources": [
+        {
+          "url": "https://english.luatvietnam.vn/",
+          "publisher": "LuatVietnam",
+          "accessedDate": "2026-05-07",
+          "verified": false
+        }
+      ],
+      "lastUpdated": "2026-05-07"
+    }
+  ],
+  "companyIds": ["coca-cola", "unilever", "nestle"],
+  "newsFeed": [
+    {
+      "id": "vne-2025-mekong",
+      "headline": "Mekong delta plastic monitoring shows seasonal spike during monsoon",
+      "url": "https://e.vnexpress.net/",
+      "publisher": "VnExpress International",
+      "publishedDate": "2025-08-19",
+      "summary": "River monitoring stations recorded plastic flows three times higher during the rainy season, mostly fragments and food packaging."
+    }
+  ],
+  "wooby": {
+    "headline": "Vietnam is writing new rules for plastic packaging.",
+    "narrative": "Wooby loves the Gulf of Tonkin and the Mekong delta. Vietnam is starting to make companies responsible for packaging. The Mekong river still carries a lot of plastic to the sea. Wooby is hopeful but watching.",
+    "iconEmoji": "🌾"
+  },
+  "sources": [
+    {
+      "url": "https://www.unep.org/topics/chemicals-and-pollution-action/plastic-pollution",
+      "publisher": "UN Environment Programme",
+      "accessedDate": "2026-05-07"
+    }
+  ],
+  "lastUpdated": "2026-05-07"
+}

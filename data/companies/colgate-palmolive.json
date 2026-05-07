@@ -1,0 +1,46 @@
+{
+  "id": "colgate-palmolive",
+  "name": "Colgate-Palmolive",
+  "hqCountryId": "usa",
+  "sector": "Personal care & household",
+  "logoEmoji": "🦷",
+  "brandColor": "#c8102e",
+  "stats": {
+    "plasticFootprintTonsPerYear": 287000,
+    "brandAuditRank": 11,
+    "recycledContentPct": 6,
+    "commitmentScore": 3,
+    "transparencyScore": 3
+  },
+  "commitments": [
+    {
+      "description": "100% recyclable, reusable, or compostable plastic packaging by 2025.",
+      "target": "100%",
+      "year": 2025
+    },
+    {
+      "description": "Cut virgin plastic by one-third in packaging by 2025.",
+      "target": "-33%",
+      "year": 2025
+    }
+  ],
+  "controversies": [
+    {
+      "description": "Toothpaste tubes traditionally combine plastic and aluminium and are very hard to recycle.",
+      "year": 2024
+    }
+  ],
+  "wooby": {
+    "headline": "Colgate is rolling out the first widely recyclable toothpaste tube.",
+    "narrative": "Wooby has a fun fact: most toothpaste tubes can't be recycled. Colgate has invented a new tube that can be — and is sharing the design with other brands. Wooby thinks that is generous.",
+    "iconEmoji": "🌊"
+  },
+  "sources": [
+    {
+      "url": "https://www.colgatepalmolive.com/en-us/sustainability",
+      "publisher": "Colgate-Palmolive",
+      "accessedDate": "2026-05-07"
+    }
+  ],
+  "lastUpdated": "2026-05-07"
+}

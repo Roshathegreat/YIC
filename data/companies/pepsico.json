@@ -1,0 +1,55 @@
+{
+  "id": "pepsico",
+  "name": "PepsiCo",
+  "hqCountryId": "usa",
+  "sector": "Beverages & snacks",
+  "logoEmoji": "🥤",
+  "brandColor": "#004b93",
+  "stats": {
+    "plasticFootprintTonsPerYear": 2500000,
+    "brandAuditRank": 2,
+    "recycledContentPct": 10,
+    "commitmentScore": 2,
+    "transparencyScore": 3
+  },
+  "commitments": [
+    {
+      "description": "Cut virgin plastic per serving 50% across global beverage portfolio by 2030 (relative to 2020).",
+      "target": "-50%",
+      "year": 2030
+    },
+    {
+      "description": "Make 100% of packaging recyclable, compostable, biodegradable, or reusable by 2025.",
+      "target": "100%",
+      "year": 2025
+    }
+  ],
+  "controversies": [
+    {
+      "description": "Consistently ranked #2 in global plastic-polluter brand audits.",
+      "year": 2023
+    },
+    {
+      "description": "Sued by New York State in 2023 over plastic pollution in the Buffalo River; case ongoing.",
+      "year": 2023
+    }
+  ],
+  "wooby": {
+    "headline": "PepsiCo promised less new plastic — Wooby is keeping count.",
+    "narrative": "PepsiCo makes Pepsi, Lay's chips, Doritos and many drinks. Their snack bags are hard to recycle. They have promised to use less new plastic, but Wooby is watching to see if it really happens.",
+    "iconEmoji": "🌊"
+  },
+  "sources": [
+    {
+      "url": "https://www.pepsico.com/our-impact/sustainability/sustainable-packaging",
+      "publisher": "PepsiCo",
+      "accessedDate": "2026-05-07"
+    },
+    {
+      "url": "https://www.brandaudit.breakfreefromplastic.org/",
+      "publisher": "Break Free From Plastic",
+      "accessedDate": "2026-05-07"
+    }
+  ],
+  "lastUpdated": "2026-05-07"
+}

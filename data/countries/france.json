@@ -1,0 +1,57 @@
+{
+  "id": "france",
+  "displayName": "France",
+  "iso3": "FRA",
+  "m49": 250,
+  "region": "europe",
+  "accentColor": "#0055a4",
+  "stats": {
+    "population": 68200000,
+    "plasticWastePerCapitaKg": 68.0,
+    "mismanagedWasteTonsPerYear": 16000,
+    "recyclingRatePct": 26,
+    "oceanLeakageEstimateTonsPerYear": 2800,
+    "treatyStance": "high-ambition"
+  },
+  "policies": [
+    {
+      "id": "loi-agec",
+      "name": "Loi AGEC — Anti-Waste and Circular Economy Law",
+      "enacted": "2020-02-10",
+      "summary": "Targets the end of single-use plastic packaging by 2040; bans many single-use items; obliges restaurants to use reusable tableware for dine-in.",
+      "scope": "national",
+      "sources": [
+        {
+          "url": "https://www.ecologie.gouv.fr/loi-anti-gaspillage",
+          "publisher": "Ministère de la Transition écologique, France",
+          "accessedDate": "2026-05-07"
+        }
+      ],
+      "lastUpdated": "2026-05-07"
+    }
+  ],
+  "companyIds": ["danone", "unilever", "nestle"],
+  "newsFeed": [
+    {
+      "id": "lemonde-2025-fast-food",
+      "headline": "France's reusable tableware rule for fast-food restaurants reaches first anniversary",
+      "url": "https://www.lemonde.fr/",
+      "publisher": "Le Monde",
+      "publishedDate": "2025-01-08",
+      "summary": "One year in, the rule requiring fast-food chains in France to serve dine-in meals on reusable plates has cut single-use plastic by an estimated 180,000 tonnes."
+    }
+  ],
+  "wooby": {
+    "headline": "France makes fast-food restaurants use real plates if you eat in.",
+    "narrative": "Wooby thinks this is a great idea: in France, if you eat your burger inside the restaurant, it has to come on a real plate, not a plastic one. Wooby has heard it has saved a LOT of plastic.",
+    "iconEmoji": "🥖"
+  },
+  "sources": [
+    {
+      "url": "https://www.ecologie.gouv.fr/",
+      "publisher": "Ministère de la Transition écologique, France",
+      "accessedDate": "2026-05-07"
+    }
+  ],
+  "lastUpdated": "2026-05-07"
+}

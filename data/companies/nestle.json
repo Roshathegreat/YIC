@@ -1,0 +1,55 @@
+{
+  "id": "nestle",
+  "name": "Nestlé",
+  "hqCountryId": "switzerland",
+  "sector": "Food & beverages",
+  "logoEmoji": "🍫",
+  "brandColor": "#7d2d46",
+  "stats": {
+    "plasticFootprintTonsPerYear": 1100000,
+    "brandAuditRank": 3,
+    "recycledContentPct": 8,
+    "commitmentScore": 3,
+    "transparencyScore": 3.5
+  },
+  "commitments": [
+    {
+      "description": "Make 100% of packaging recyclable or reusable by 2025.",
+      "target": "100%",
+      "year": 2025
+    },
+    {
+      "description": "Reduce virgin plastic use by one-third by 2025 (vs 2018).",
+      "target": "-33%",
+      "year": 2025
+    }
+  ],
+  "controversies": [
+    {
+      "description": "Consistently in the top 3 plastic polluters in global brand audits.",
+      "year": 2023
+    },
+    {
+      "description": "Greenpeace investigation in 2024 found Nestlé sachet waste prevalent on Philippine and Indonesian beaches.",
+      "year": 2024
+    }
+  ],
+  "wooby": {
+    "headline": "Nestlé's tiny single-use sachets show up on Wooby's favourite beaches.",
+    "narrative": "Nestlé makes coffee, chocolate, water bottles, and tiny sachets of milk and seasoning. The sachets are hard to recycle. Wooby has heard them rustle in the surf in Indonesia and the Philippines.",
+    "iconEmoji": "🌊"
+  },
+  "sources": [
+    {
+      "url": "https://www.nestle.com/sustainability/packaging",
+      "publisher": "Nestlé",
+      "accessedDate": "2026-05-07"
+    },
+    {
+      "url": "https://www.brandaudit.breakfreefromplastic.org/",
+      "publisher": "Break Free From Plastic",
+      "accessedDate": "2026-05-07"
+    }
+  ],
+  "lastUpdated": "2026-05-07"
+}

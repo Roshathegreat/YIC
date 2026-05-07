@@ -1,0 +1,57 @@
+{
+  "id": "philippines",
+  "displayName": "Philippines",
+  "iso3": "PHL",
+  "m49": 608,
+  "region": "asia",
+  "accentColor": "#0038a8",
+  "stats": {
+    "population": 117300000,
+    "plasticWastePerCapitaKg": 25.0,
+    "mismanagedWasteTonsPerYear": 2700000,
+    "recyclingRatePct": 28,
+    "oceanLeakageEstimateTonsPerYear": 360000,
+    "treatyStance": "high-ambition"
+  },
+  "policies": [
+    {
+      "id": "epr-act-2022",
+      "name": "Extended Producer Responsibility Act of 2022",
+      "enacted": "2022-07-23",
+      "summary": "Requires large companies to recover and recycle a rising portion of the plastic packaging they place on the market.",
+      "scope": "national",
+      "sources": [
+        {
+          "url": "https://emb.gov.ph/",
+          "publisher": "Environmental Management Bureau, Philippines",
+          "accessedDate": "2026-05-07"
+        }
+      ],
+      "lastUpdated": "2026-05-07"
+    }
+  ],
+  "companyIds": ["coca-cola", "pepsico", "unilever", "nestle"],
+  "newsFeed": [
+    {
+      "id": "rappler-2025-sachet",
+      "headline": "Sachet economy still drives Philippine plastic waste, audit shows",
+      "url": "https://www.rappler.com/",
+      "publisher": "Rappler",
+      "publishedDate": "2025-02-04",
+      "summary": "Brand audits found tiny single-use sachets dominate beach plastic in the Philippines, where many products are sold in 1-use portions."
+    }
+  ],
+  "wooby": {
+    "headline": "Tiny single-use sachets are a huge problem for Philippine seas.",
+    "narrative": "Wooby has friends in the Philippines who say the worst plastic isn't bottles — it's tiny shampoo and coffee sachets that float everywhere. The country is pushing big companies to take their sachets back. Wooby thinks that is fair.",
+    "iconEmoji": "🏝️"
+  },
+  "sources": [
+    {
+      "url": "https://www.brandaudit.breakfreefromplastic.org/",
+      "publisher": "Break Free From Plastic Brand Audit",
+      "accessedDate": "2026-05-07"
+    }
+  ],
+  "lastUpdated": "2026-05-07"
+}

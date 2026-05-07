@@ -1,0 +1,57 @@
+{
+  "id": "italy",
+  "displayName": "Italy",
+  "iso3": "ITA",
+  "m49": 380,
+  "region": "europe",
+  "accentColor": "#008c45",
+  "stats": {
+    "population": 58800000,
+    "plasticWastePerCapitaKg": 53.0,
+    "mismanagedWasteTonsPerYear": 14000,
+    "recyclingRatePct": 50,
+    "oceanLeakageEstimateTonsPerYear": 2500,
+    "treatyStance": "high-ambition"
+  },
+  "policies": [
+    {
+      "id": "decreto-sup-2022",
+      "name": "Decreto SUP — Single-Use Plastics Decree",
+      "enacted": "2022-01-14",
+      "summary": "Italy's transposition of the EU SUP Directive: bans single-use plastic cutlery, plates, straws, stirrers, and polystyrene cups and food containers.",
+      "scope": "national",
+      "sources": [
+        {
+          "url": "https://www.mase.gov.it/",
+          "publisher": "Ministero dell'Ambiente e della Sicurezza Energetica",
+          "accessedDate": "2026-05-07"
+        }
+      ],
+      "lastUpdated": "2026-05-07"
+    }
+  ],
+  "companyIds": ["ferrero", "perfetti-vanmelle", "nestle"],
+  "newsFeed": [
+    {
+      "id": "corriere-2025-mediterranean",
+      "headline": "Mediterranean plastic monitoring shows Italian beaches still dominated by cigarette butts and bottle caps",
+      "url": "https://www.corriere.it/",
+      "publisher": "Corriere della Sera",
+      "publishedDate": "2025-09-02",
+      "summary": "An annual cleanup audit found cigarette filters and plastic bottle caps still topped the Italian beach-litter list, despite EU bans."
+    }
+  ],
+  "wooby": {
+    "headline": "Italy recycles half its plastic and bans single-use cutlery.",
+    "narrative": "Wooby loves the warm Mediterranean Sea around Italy. Italy banned plastic forks and plates and recycles about half of its plastic. But cigarette butts on the beach are still a problem. Wooby asks: please put them in the bin!",
+    "iconEmoji": "🇮🇹"
+  },
+  "sources": [
+    {
+      "url": "https://www.isprambiente.gov.it/en",
+      "publisher": "Italian Institute for Environmental Protection (ISPRA)",
+      "accessedDate": "2026-05-07"
+    }
+  ],
+  "lastUpdated": "2026-05-07"
+}
